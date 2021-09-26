@@ -1,5 +1,5 @@
 import React from "react";
-import { ComplaintSection, ComplaintContainerMain, ComplaintContainerCards, ComplaintContainerIcon, ComplaintContainerMatter, QuoteContainer, QuoteContainerSectionCards, QuoteContainerSection } from "./styles.js"
+import { ComplaintSection, ComplaintContainerMain, ComplaintContainerCards, ComplaintContainerIcon, ComplaintContainerMatter } from "./styles.js"
 import img from "../../../data/assets/book.svg"
 
 const Complaint = () => {
@@ -54,28 +54,6 @@ const Complaint = () => {
                 </ComplaintContainerCards>
             </ComplaintContainerMain>
         </ComplaintSection>
-        <QuoteContainer>
-        <h1>Deel makes growing remote and international teams effortless. Ready to get started?</h1>
-        <button>Request a demo</button>
-        <QuoteContainerSection>
-            <QuoteContainerSectionCards>
-            <h1>150 +</h1>
-            <p>Countries</p>
-            </QuoteContainerSectionCards>
-            <QuoteContainerSectionCards>
-            <h1>150 +</h1>
-            <p>Countries</p>
-            </QuoteContainerSectionCards>
-            <QuoteContainerSectionCards>
-            <h1>150 +</h1>
-            <p>Countries</p>
-            </QuoteContainerSectionCards>
-            <QuoteContainerSectionCards>
-            <h1>150 +</h1>
-            <p>Countries</p>
-            </QuoteContainerSectionCards>
-        </QuoteContainerSection>
-    </QuoteContainer>
     </>
     )
 }

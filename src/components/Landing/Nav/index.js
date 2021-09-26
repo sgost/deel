@@ -49,23 +49,58 @@ const Nav = () => {
     }
   }
 
+  const [open, setOpen] = useState(false)
+
   return (
     <NavContainer>
-      <div id={navbar === false ? "NavContainer" : navbars === true ? "NavContainers" : "NavContainer2"}>
+      <div
+        id={
+          navbar === false
+            ? "NavContainer"
+            : navbars === true
+            ? "NavContainers"
+            : "NavContainer2"
+        }
+      >
         <div id="navLogo">
-          <h1>deel.</h1>
+            <Link to="/" id="logo">
+              deel.
+            </Link>
         </div>
         <div id="navLNks">
           <div id="navTitle">
-            <Link to="/hireEmployees/" id="nav_link">How it works</Link>
+            <h1 id="nav_link" onClick={() => setOpen(true)}>
+              How it works<div id="span"></div>
+            </h1>
+            {open ? (
+              <div id="nav_matter">
+                <Link id="nav_matter_content" to="./hireEmployees">
+                  <h1>Hire Employees</h1>
+                  <p>Hire Employees abord with our employee service</p>
+                </Link>
+                <Link id="nav_matter_content" to="./hireEmployees">
+                  <h1>Hire Contractors</h1>
+                  <p>Hire Employees abord with our employee service</p>
+                </Link>
+                <Link id="nav_matter_content" to="./payroll">
+                  <h1>Run Global Payroll</h1>
+                  <p>Hire Employees abord with our employee service</p>
+                </Link>
+              </div>
+            ) : (
+              ""
+            )}
+          </div>
+          <div id="navTitle">
+            <h1 id="nav_link" onClick={() => setOpen(true)}>
+              Solutions<div id="span"></div>
+            </h1>
             <div id="span"></div>
           </div>
           <div id="navTitle">
-            <p>Solutions</p>
-            <div id="span"></div>
-          </div>
-          <div id="navTitle">
-            <p>Resources</p>
+            <h1 id="nav_link" onClick={() => setOpen(true)}>
+              Resources<div id="span"></div>
+            </h1>
             <div id="span"></div>
           </div>
           <Link id="nav_link">Global Hiring Guide</Link>

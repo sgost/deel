@@ -2,9 +2,9 @@ import React from "react"
 import { TrustSection } from "./styles.js"
 import logo from "../../../data/assets/shopify.png"
 import img1 from "../../../data/assets/1.jpeg"
-import {Link} from "gatsby"
+import { Link } from "gatsby"
 
-const Trust = () => {
+const Trust = ({ color }) => {
   return (
     <TrustSection>
       <div id="Trust_container">
@@ -46,7 +46,7 @@ const Trust = () => {
             <Link id="link">Learn more</Link>
           </div>
           <div id="cardImage">
-            <img src={img1} alt="img"/>
+            <img src={img1} alt="img" />
           </div>
         </div>
         <div id="Cards">
@@ -61,7 +61,7 @@ const Trust = () => {
             <Link id="link">Learn more</Link>
           </div>
           <div id="cardImage">
-            <img src={img1} alt="img"/>
+            <img src={img1} alt="img" />
           </div>
         </div>
         <div id="Cards">
@@ -76,7 +76,7 @@ const Trust = () => {
             <Link id="link">Learn more</Link>
           </div>
           <div id="cardImage">
-            <img src={img1} alt="img"/>
+            <img src={img1} alt="img" />
           </div>
         </div>
       </div>
