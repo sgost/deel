@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react"
 import { NavContainer } from "./styles.js"
 import { Link } from "gatsby"
+import { Popover, Button } from "antd"
+import PopOver from "./PopoverContent"
 
 const Nav = () => {
   useEffect(() => {
@@ -51,6 +53,19 @@ const Nav = () => {
 
   const [open, setOpen] = useState(false)
 
+  const overlayInnerStyle = {
+    backgroundColor: `red`,
+    width: `500px`,
+  }
+  const overlay = {
+    backgroundColor: `green`,
+    width: `500px`,
+  }
+  const id = {
+    backgroundColor: `green`,
+    width: `500px`,
+  }
+
   return (
     <NavContainer>
       <div
@@ -63,33 +78,25 @@ const Nav = () => {
         }
       >
         <div id="navLogo">
-            <Link to="/" id="logo">
-              deel.
-            </Link>
+          <Link to="/" id="logo">
+            deel.
+          </Link>
         </div>
         <div id="navLNks">
           <div id="navTitle">
-            <h1 id="nav_link" onClick={() => setOpen(true)}>
-              How it works<div id="span"></div>
-            </h1>
-            {open ? (
-              <div id="nav_matter">
-                <Link id="nav_matter_content" to="./hireEmployees">
-                  <h1>Hire Employees</h1>
-                  <p>Hire Employees abord with our employee service</p>
-                </Link>
-                <Link id="nav_matter_content" to="./hireEmployees">
-                  <h1>Hire Contractors</h1>
-                  <p>Hire Employees abord with our employee service</p>
-                </Link>
-                <Link id="nav_matter_content" to="./payroll">
-                  <h1>Run Global Payroll</h1>
-                  <p>Hire Employees abord with our employee service</p>
-                </Link>
-              </div>
-            ) : (
-              ""
-            )}
+            <Popover
+              placement="bottomLeft"
+              trigger="click"
+              content={PopOver}
+              color="red"
+              id={id}
+              overlay={overlay}
+              overlayInnerStyle={overlayInnerStyle}
+            >
+              <h1 id="nav_link">
+                How it works<div id="span"></div>
+              </h1>
+            </Popover>
           </div>
           <div id="navTitle">
             <h1 id="nav_link" onClick={() => setOpen(true)}>

@@ -142,7 +142,7 @@ export const CardContainer2 = styled.div`
 
 export const EmployeesDeel = styled.div`
 background:#f3f3f3;
-padding:0 50px 150px 50px;
+padding:0 100px 150px 100px;
   h1 {
     font-weight: 700;
     color: ${palette.PRIMARY_TXT_COLOR};
@@ -151,7 +151,7 @@ padding:0 50px 150px 50px;
   }
   #Matters_mini_card {
     display: grid;
-    grid-template-columns: repeat(3, 436px);
+    grid-template-columns: repeat(3, auto);
     width: fit-content;
     margin: auto;
     gap:60px 40px;

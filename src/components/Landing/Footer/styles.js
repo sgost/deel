@@ -3,7 +3,7 @@ import * as palette from "../../../styles/variables"
 
 export const FooterContainer = styled.div`
 background-color:${palette.PRIMARY_TXT_COLOR};
-padding:3.59712230215827vw 14.3884892086331vw 0 14.3884892086331vw;
+padding:3.59712230215827vw 7.19424460431655vw 0 7.19424460431655vw;
 `
 export const FooterContainerTop = styled.div`
 display:flex;
