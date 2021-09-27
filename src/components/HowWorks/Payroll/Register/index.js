@@ -8,7 +8,7 @@ import {
 } from "./styles.js"
 import BannerImage from "../../../../data/assets/1.jpeg"
 import logo from "../../../../data/assets/shopify.png"
-import { Form, Input, Button, Select } from "antd"
+import { Form, Select } from "antd"
 
 const Register = () => {
   const { Option } = Select

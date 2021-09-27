@@ -3,7 +3,7 @@ import * as palette from "../../../../styles/variables"
 
 export const RegisterSection = styled.div`
   width: 100%;
-  height: 59vw;
+  height: fit-content;
   display: flex;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -15,93 +15,98 @@ export const ImageConteiner = styled.div`
   width: 100%;
   height: 100%;
   #img1 {
-    height: 59vw;
+    height: 100%;
   }
 `
 export const RegisterContainer = styled.div`
   display: flex;
   width: fit-content;
-  margin: auto;
+  margin: 10vw auto 4vw auto;
   #Register_matter {
     text-align: left;
-    width: 460px;
+    width: 33.0935251798561vw;
     margin: auto 10.7913669064748vw auto auto;
   }
   #Register_matter h1 {
-    font-size: 64px;
+    font-size: 4.60431654676259vw;
     font-weight: 700;
     line-height: 1.1;
     color: ${palette.PRIMARY_TXT_COLOR};
-    margin: 0 0 24px 0;
+    margin: 0 0 1.72661870503597vw 0;
   }
   #Register_matter p {
-    font-size: 24px;
+    font-size: 1.72661870503597vw;
     line-height: 1.72;
     color: ${palette.PRIMARY_TXT_COLOR};
   }
   #Register_form {
-    padding: 40px;
-    border-radius: 16px;
-    box-shadow: 0 8px 22px 0 rgb(19 21 51 / 12%);
+    padding: 2.87769784172662vw;
+    border-radius: 1.15107913669065vw;
+    box-shadow: 0 0.575539568345324vw 1.58273381294964vw 0 rgb(19 21 51 / 12%);
     background-color: #fff;
-    width: 560px;
+    width:fit-content;
   }
   #Register_form h1 {
     font-weight: 600;
     color: ${palette.PRIMARY_TXT_COLOR};
     line-height: 1.4;
-    font-size: 28px;
-    margin: 0 0 24px 0;
+    font-size: 2.01438848920863vw;
+    margin: 0 0 1.72661870503597vw 0;
   }
   #Register_form_real {
     display: grid;
     grid-template-columns: auto;
-    gap: 28px;
+    gap: 2.01438848920863vw;
+    width:35vw;
   }
   #Register_form_real #input1 {
     display: flex;
     flex-direction: column;
   }
   #Register_form_real input {
-    height: 48px;
-    border: 1px solid #cfd0d6;
-    border-radius: 2px;
+    height: 3.45323741007194vw;
+    border: 0.0719424460431655vw solid #cfd0d6;
+    border-radius: 0.143884892086331vw;
     background-color: transparent;
     width: 100%;
     outline: none;
-    padding: 20px;
+    padding: 1.43884892086331vw;
+    font-size:1.1vw;
   }
   #Register_form_real label {
-    margin-bottom: 8px;
+    margin-bottom: 0.575539568345324vw;
     color: #131533;
-    font-size: 13px;
+    font-size: 0.935251798561151vw;
     line-height: 1.5;
     font-weight: 400;
   }
   #Register_form #input2 {
     display: grid;
-    grid-template-columns: repeat(2, 47.5%);
+    grid-template-columns: auto auto;
     gap: 5%;
   }
-  #Register_form #input2 #input2_b1 {
-    width: 100%;
+  #Register_form #input2 input{
+    width:100%;
   }
   #Register_form #input1 #input_select {
-    height: 48px;
-    border: 1px solid #cfd0d6;
-    border-radius: 2px;
+    height: 3.45323741007194vw;
+    border: 0.0719424460431655vw solid #cfd0d6;
+    border-radius: 0.143884892086331vw;
     background-color: transparent;
     width: 100%;
     outline: none;
-    padding: 20px;
+    padding: 1.43884892086331vw;
+  }
+  #Register_form #input1 .ant-col{
+    width:35vw;
   }
   #Register_form #input button {
     width: 100%;
-    height: 47px;
+    height: 3.38129496402878vw;
     background-color: ${palette.SECONDARY_TXT_COLOR};
-    border-radius: 50px;
-    border:none;
-    outline:none;
+    border-radius: 3.59712230215827vw;
+    border: none;
+    outline: none;
     color: white;
   }
 `
@@ -153,14 +158,14 @@ export const TrustSection = styled.div`
 
 export const Solution = styled.div`
   margin: 0;
-  padding: 150px 0;
+  padding: 10.7913669064748vw 0;
   h1 {
-    font-size: 64px;
+    font-size: 4.60431654676259vw;
     font-weight: 700;
     line-height: 1.1;
     color: ${palette.PRIMARY_TXT_COLOR};
-    margin: 0 auto 24px auto;
-    width: 800px;
+    margin: 0 auto 1.72661870503597vw auto;
+    width: 57.5539568345324vw;
     text-align: center;
   }
   #card_container {
@@ -171,27 +176,27 @@ export const Solution = styled.div`
     display: flex;
     width: 100%;
     justify-content: space-between;
-    padding: 200px 0 0 0;
+    padding: 14.3884892086331vw 0 0 0;
   }
   #card_container1 {
-    padding: 0 0 0 48px;
+    padding: 0 0 0 3.45323741007194vw;
   }
   #card_container1_cards #card_container_matter {
-    width: 450px;
+    width: 32.3741007194245vw;
     margin: auto 0 auto 0;
     text-align: left;
   }
   #card_container_matter p1 {
     color: #00ac6b;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 1.00719424460432vw;
   }
   #card_container_matter h2 {
     color: ${palette.PRIMARY_TXT_COLOR};
     font-weight: 700;
-    font-size: 32px;
+    font-size: 2.30215827338129vw;
     line-height: 1.36;
-    margin: 8px 0 16px 0;
+    margin: 0.575539568345324vw 0 1.15107913669065vw 0;
   }
   #card_container_matter h3 {
     color: ${palette.PRIMARY_TXT_COLOR};
@@ -200,8 +205,8 @@ export const Solution = styled.div`
     font-weight: 400;
   }
   #card_container_image {
-    width: 768px;
-    height: 605px;
+    width: 55.2517985611511vw;
+    height: 43.5251798561151vw;
   }
   #card_container_image img {
     width: 100%;
@@ -209,19 +214,19 @@ export const Solution = styled.div`
   }
 
   #card_container1:nth-child(even) {
-    padding: 0 48px 0 0;
+    padding: 0 3.45323741007194vw 0 0;
   }
   #card_container1:nth-child(even) #card_container1_cards {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    padding: 200px 0 0 0;
+    padding: 14.3884892086331vw 0 0 0;
     flex-direction: row-reverse;
   }
   #card_container1:nth-child(even)
     #card_container1_cards
     #card_container_matter {
-    width: 450px;
+    width: 32.3741007194245vw;
     margin: auto 0 auto 0;
     text-align: left;
   }

@@ -26,6 +26,7 @@ button{
     width:14.1302158273381vw;
     height:3.45323741007194vw;
     margin:4.31654676258993vw 0;
+    font-size:1vw;
 }
 `
 export const QuoteContainerSection = styled.div`

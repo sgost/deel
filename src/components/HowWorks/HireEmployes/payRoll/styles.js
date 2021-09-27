@@ -43,25 +43,25 @@ export const CardContainer = styled.div`
   }
   #Matters_mini_conteiner {
     display: grid;
-    grid-template-columns: 365px 365px 365px;
-    gap: 50px 40px;
+    grid-template-columns: 26.2589928057554vw 26.2589928057554vw 26.2589928057554vw;
+    gap: 3.59712230215827vw 2.87769784172662vw;
     width: fit-content;
-    margin: 80px auto auto auto;
+    margin: 5.75539568345324vw auto auto auto;
   }
   #Matters_mini_conteiner_matter {
     display: flex;
   }
   #Matters_mini_conteiner2 {
-    margin-left: 20px;
+    margin-left: 1.43884892086331vw;
   }
   #Matters_mini_conteiner2 h1 {
-    margin-bottom: 25px;
-    font-size: 18px;
+    margin-bottom: 1.79856115107914vw;
+    font-size: 1.29496402877698vw;
     color: ${palette.PRIMARY_TXT_COLOR};
     font-weight: 500;
   }
   #Matters_mini_conteiner2 p {
-    font-size: 18px;
+    font-size: 1.29496402877698vw;
     line-height: 1.72;
     font-weight: 400;
     color: ${palette.PRIMARY_TXT_COLOR};
@@ -98,8 +98,8 @@ export const CardContainer2 = styled.div`
     img {
       width: 44.8920863309352vw;
       height: 32.3021582733813vw;
-      border-top-right-radius: 30px;
-      border-bottom-right-radius: 30px;
+      border-top-right-radius: 2.15827338129496vw;
+      border-bottom-right-radius: 2.15827338129496vw;
     }
   }
   #CardsContainer #Cards #cardData #link {
@@ -113,27 +113,27 @@ export const CardContainer2 = styled.div`
   }
   #Matters_mini_conteiner {
     display: grid;
-    grid-template-columns: 550px 550px;
-    gap: 50px 40px;
+    grid-template-columns: 39.568345323741vw 39.568345323741vw;
+    gap: 3.59712230215827vw 2.87769784172662vw;
     margin: auto;
     width: fit-content;
     margin: auto;
-    padding-top: 80px;
+    padding-top: 5.75539568345324vw;
   }
   #Matters_mini_conteiner_matter {
     display: flex;
   }
   #Matters_mini_conteiner2 {
-    margin-left: 20px;
+    margin-left: 1.43884892086331vw;
   }
   #Matters_mini_conteiner2 h1 {
-    margin-bottom: 25px;
-    font-size: 18px;
+    margin-bottom: 1.79856115107914vw;
+    font-size: 1.29496402877698vw;
     color: ${palette.PRIMARY_TXT_COLOR};
     font-weight: 500;
   }
   #Matters_mini_conteiner2 p {
-    font-size: 18px;
+    font-size: 1.29496402877698vw;
     line-height: 1.72;
     font-weight: 400;
     color: ${palette.PRIMARY_TXT_COLOR};
@@ -141,33 +141,33 @@ export const CardContainer2 = styled.div`
 `
 
 export const EmployeesDeel = styled.div`
-background:#f3f3f3;
-padding:0 100px 150px 100px;
+  background: #f3f3f3;
+  padding: 0 7.19424460431655vw 10.7913669064748vw 7.19424460431655vw;
   h1 {
     font-weight: 700;
     color: ${palette.PRIMARY_TXT_COLOR};
-    font-size: 41px;
-    margin-bottom:50px;
+    font-size: 2.94964028776978vw;
+    margin-bottom: 3.59712230215827vw;
   }
   #Matters_mini_card {
     display: grid;
     grid-template-columns: repeat(3, auto);
     width: fit-content;
     margin: auto;
-    gap:60px 40px;
+    gap: 4.31654676258993vw 2.87769784172662vw;
   }
   #Matters_mini_conteiner2 img {
-    width: 120px;
-    height: 120px;
+    width: 8.63309352517986vw;
+    height: 8.63309352517986vw;
   }
   #Matters_mini_conteiner2 h1 {
-    margin: 10px 0;
-    font-size: 20px;
+    margin: 0.719424460431655vw 0;
+    font-size: 1.43884892086331vw;
     color: ${palette.PRIMARY_TXT_COLOR};
     font-weight: 500;
   }
   #Matters_mini_conteiner2 p {
-    font-size: 18px;
+    font-size: 1.29496402877698vw;
     line-height: 1.72;
     font-weight: 400;
     color: ${palette.PRIMARY_TXT_COLOR};

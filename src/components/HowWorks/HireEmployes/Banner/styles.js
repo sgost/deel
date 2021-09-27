@@ -50,6 +50,7 @@ export const BannerSection = styled.div`
     cursor: pointer;
     border-color: rgba(255, 255, 255, 0.5);
     background-color: rgba(255, 255, 255, 0.3);
+    cursor:pointer;
   }
 `
 export const ImageConteiner = styled.div`
@@ -65,26 +66,26 @@ export const ButtonSection = styled.div`
   width: fit-content;
   display: flex;
   margin: auto;
-  padding: 150px 0;
+  padding: 10.7913669064748vw 0;
   button {
     font-size: 1.00719424460432vw;
     border-radius: 3.59712230215827vw;
     cursor: pointer;
-    border: 1px solid ${palette.SECONDARY_TXT_COLOR};
+    border: 0.0719424460431655vw solid ${palette.SECONDARY_TXT_COLOR};
     color: ${palette.SECONDARY_TXT_COLOR};
-    padding: 10px 35px;
+    padding: 0.719424460431655vw 2.51798561151079vw;
     background: transparent;
     font-size: 1.00719424460432vw;
-    margin-left: 20px;
+    margin-left: 1.43884892086331vw;
   }
 `
 export const MatterConteiner = styled.div`
-  width: 1135px;
+  width: 81.6546762589928vw;
   margin: auto;
-  padding: 0 12px 0 12px;
+  padding: 0 0.863309352517986vw 0 0.863309352517986vw;
   h1 {
-    font-size: 48px;
-    margin-bottom: 16px;
+    font-size: 3.45323741007194vw;
+    margin-bottom: 1.15107913669065vw;
     color: ${palette.PRIMARY_TXT_COLOR};
     line-height: 1.36;
     font-weight: 700;
@@ -93,9 +94,9 @@ export const MatterConteiner = styled.div`
 export const MatterSection = styled.div`
   display: grid;
   grid-template-columns: repeat(2, auto);
-  gap: 50px;
+  gap: 3.59712230215827vw;
   p {
-    font-size: 16px;
+    font-size: 1.15107913669065vw;
     text-align: justify;
     line-height: 1.72;
   }
@@ -144,27 +145,27 @@ export const CardContainer = styled.div`
   }
   #Matters_mini_conteiner {
     display: grid;
-    grid-template-columns: 550px 550px;
-    gap: 50px 40px;
+    grid-template-columns: 39.568345323741vw 39.568345323741vw;
+    gap: 3.59712230215827vw 2.87769784172662vw;
     margin: auto;
     width: fit-content;
     margin: auto;
-    padding-top: 80px;
+    padding-top: 5.75539568345324vw;
   }
   #Matters_mini_conteiner_matter {
     display: flex;
   }
   #Matters_mini_conteiner2 {
-    margin-left: 20px;
+    margin-left: 1.43884892086331vw;
   }
   #Matters_mini_conteiner2 h1 {
-    margin-bottom: 25px;
-    font-size: 18px;
+    margin-bottom: 1.79856115107914vw;
+    font-size: 2vw;
     color: ${palette.PRIMARY_TXT_COLOR};
     font-weight: 500;
   }
   #Matters_mini_conteiner2 p {
-    font-size: 18px;
+    font-size: 1vw;
     line-height: 1.72;
     font-weight: 400;
     color: ${palette.PRIMARY_TXT_COLOR};
@@ -188,14 +189,14 @@ export const DataContainer = styled.div`
   padding: 3.45323741007194vw 10vw 3.45323741007194vw 3.453237vw;
   border-top-right-radius: 1.15107913669065vw;
   border-bottom-right-radius: 1.15107913669065vw;
-  width: 780px;
+  width: 56.1151079136691vw;
   margin-top:22vw;
   h1 {
     font-size: 3.4vw;
     line-height: 1.36;
     font-weight: 700;
     color: ${palette.PRIMARY_TXT_COLOR};
-    margin-bottom:28px;
+    margin-bottom:2.01438848920863vw;
   }
    p {
     font-size: 1.15107913669065vw;

@@ -1,13 +1,33 @@
 import React from "react"
-import { TrustSection } from "./styles.js"
-import logo from "../../../data/assets/shopify.png"
-import img1 from "../../../data/assets/1.jpeg"
+import {
+  BannerSection,
+  TrustSection,
+  ImageConteiner,
+} from "./styles.js"
+import BannerImage from "../../../data/assets/1.jpeg"
 import { Link } from "gatsby"
-import { ArrowRightOutlined } from "@ant-design/icons"
+import { CheckOutlined } from "@ant-design/icons"
+import img from "../../../data/assets/banner2.jpg"
 
-const Trust = ({ color }) => {
+const Compilation = () => {
   return (
-    <TrustSection>
+    <>
+      <BannerSection>
+        <ImageConteiner>
+        </ImageConteiner>
+        <div id="banner_container">
+          <h2>employees</h2>
+          <h1>without opening an entity</h1>
+          <p>
+            Hire employees in another country in minutes without the cost, time,
+            and extra admin. Deel handles the entire employment process so you
+            can focus on building your best business.
+          </p>
+          <button>Watch Video</button>
+        </div>
+      </BannerSection>
+
+      <TrustSection>
       <div id="Trust_container">
         <h1>
           Join thousands of companies that trust Deel to compliantly hire
@@ -20,20 +40,6 @@ const Trust = ({ color }) => {
           compliance for your international team.
         </h2>
       </div>
-      <div id="Trust_container2">
-        <img src={logo} alt="img" />
-        <img src={logo} alt="img" />
-        <img src={logo} alt="img" />
-        <img src={logo} alt="img" />
-        <img src={logo} alt="img" />
-        <img src={logo} alt="img" />
-        <img src={logo} alt="img" />
-        <img src={logo} alt="img" />
-        <img src={logo} alt="img" />
-        <img src={logo} alt="img" />
-        <img src={logo} alt="img" />
-        <img src={logo} alt="img" />
-      </div>
       <div id="CardsContainer">
         <div id="Cards">
           <div id="cardData">
@@ -44,12 +50,9 @@ const Trust = ({ color }) => {
               with local laws, send it to sign, and they'll get onboarded almost
               instantly.
             </h2>
-            <Link id="link">
-              Learn more <ArrowRightOutlined className="icon" />
-            </Link>
           </div>
           <div id="cardImage">
-            <img src={img1} alt="img" />
+            <img src={BannerImage} alt="img" />
           </div>
         </div>
         <div id="Cards">
@@ -61,12 +64,10 @@ const Trust = ({ color }) => {
               with local laws, send it to sign, and they'll get onboarded almost
               instantly.
             </h2>
-            <Link id="link">
-              Learn more <ArrowRightOutlined className="icon" />
-            </Link>
+            <p>Go from offer letter to onboarded ‍in minutes</p>
           </div>
           <div id="cardImage">
-            <img src={img1} alt="img" />
+            <img src={BannerImage} alt="img" />
           </div>
         </div>
         <div id="Cards">
@@ -78,16 +79,15 @@ const Trust = ({ color }) => {
               with local laws, send it to sign, and they'll get onboarded almost
               instantly.
             </h2>
-            <Link id="link">
-              Learn more <ArrowRightOutlined className="icon" />
-            </Link>
           </div>
           <div id="cardImage">
-            <img src={img1} alt="img" />
+            <img src={BannerImage} alt="img" />
           </div>
         </div>
       </div>
     </TrustSection>
+
+    </>
   )
 }
-export default Trust
+export default Compilation

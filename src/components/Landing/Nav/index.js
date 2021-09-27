@@ -3,6 +3,7 @@ import { NavContainer } from "./styles.js"
 import { Link } from "gatsby"
 import { Popover, Button } from "antd"
 import PopOver from "./PopoverContent"
+import PopOver2 from "./PopOverContent2"
 
 const Nav = () => {
   useEffect(() => {
@@ -88,7 +89,6 @@ const Nav = () => {
               placement="bottomLeft"
               trigger="click"
               content={PopOver}
-              color="red"
               id={id}
               overlay={overlay}
               overlayInnerStyle={overlayInnerStyle}
@@ -99,9 +99,18 @@ const Nav = () => {
             </Popover>
           </div>
           <div id="navTitle">
-            <h1 id="nav_link" onClick={() => setOpen(true)}>
+            <Popover
+              placement="bottomLeft"
+              trigger="click"
+              content={PopOver2}
+              id={id}
+              overlay={overlay}
+              overlayInnerStyle={overlayInnerStyle}
+            >
+              <h1 id="nav_link">
               Solutions<div id="span"></div>
-            </h1>
+              </h1>
+            </Popover>
             <div id="span"></div>
           </div>
           <div id="navTitle">

@@ -79,7 +79,7 @@ export const PeopleSection = styled.div`
   }
   #btn{
     position:absolute;
-    top:40%;
+    top:45%;
     z-index:5;
     cursor:pointer;
   }

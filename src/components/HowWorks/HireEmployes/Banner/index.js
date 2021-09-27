@@ -75,10 +75,7 @@ const Banner = () => {
                 compliant with local laws, send it to sign, and they'll get
                 onboarded almost instantly.
               </h2>
-              <Link id="link">
-                Learn more
-                <CheckOutlined />
-              </Link>
+              <Link id="link">Learn more</Link>
             </div>
           </div>
         </div>

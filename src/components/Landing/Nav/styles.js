@@ -142,3 +142,56 @@ export const NavMatter = styled.div`
   width: 200px;
 }
 `
+
+export const NavMatter2 = styled.div`
+display:flex;
+justify-content:center;
+align-items:center;
+#nav_matter_block1_content{
+  height:fit-content;
+  margin:auto 0 auto 0;
+  border-right:0.3px solid gray;
+}
+#nav_matter_block1_content h1{
+  color:${palette.PRIMARY_TXT_COLOR};
+  font-size:1.2vw;
+  margin-bottom:1vw;
+  display:flex;
+  width:100%;
+  justify-content:space-between;
+  cursor:pointer;
+  transition:0.5s ease-in-out;
+}
+#nav_matter_block1_content h1:hover {
+color: ${palette.SECONDARY_TXT_COLOR}
+}
+#nav_matter_block1_content h1 .icon{
+  margin:0.2vw 2vw 0 2vw;
+  font-size:1vw;
+}
+#none{
+  display:none;
+}
+#nav_matter_block2{
+  padding:2vw;
+  display:grid;
+  grid-template-columns:auto auto;
+  gap:2vw 4vw;
+}
+#nav_matter_content p1 {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: ${palette.PRIMARY_TXT_COLOR};
+  transition:0.5s ease-in-out;
+  font-weight:400;
+}
+#nav_matter_content p1:hover {
+  color: ${palette.SECONDARY_TXT_COLOR};
+}
+#nav_matter_content p {
+  font-size: 14px;
+  color: ${palette.PRIMARY_TXT_COLOR};
+  font-weight: 400;
+  width: 200px;
+}
+`

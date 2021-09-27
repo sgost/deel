@@ -8,11 +8,12 @@ import Clints from "../components/Landing/Clints/index"
 import Complaint from "../components/Landing/Complaint/index"
 import Growing from "../components/Landing/Growing/index"
 import Footer from "../components/Landing/Footer/index"
+import Compilation from "../components/Solutions/Compilation"
 
 const Landing = () => {
   return (
     <>
-      <Banner />
+      {/* <Banner />
       <Trust />
       <Flexibility />
       <People />
@@ -20,7 +21,8 @@ const Landing = () => {
       <Deel />
       <Complaint />
       <Growing/>
-      <Footer />
+      <Footer /> */}
+      <Compilation />
     </>
   )
 }
