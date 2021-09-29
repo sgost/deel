@@ -67,6 +67,26 @@ const Nav = () => {
     width: `500px`,
   }
 
+//Nav NavContainer
+
+const HowItWorks = [
+  {
+    "title": "Hire Employees",
+    "link": "/hireEmployees/",
+    "description": "Hire Employees abord with our employee service",
+  },
+  {
+    "title": "Hire Contractors",
+    "link": "/hireEmployees/",
+    "description": "Hire Employees abord with our employee service",
+  },
+  {
+    "title": "Run Global Payroll",
+    "link": "/payroll/",
+    "description": "Hire Employees abord with our employee service",
+  },
+]
+
   return (
     <NavContainer>
       <div
@@ -88,7 +108,7 @@ const Nav = () => {
             <Popover
               placement="bottomLeft"
               trigger="click"
-              content={PopOver}
+              content={<PopOver HowItWorks={HowItWorks}/>}
               id={id}
               overlay={overlay}
               overlayInnerStyle={overlayInnerStyle}
