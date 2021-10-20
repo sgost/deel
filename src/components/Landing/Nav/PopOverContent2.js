@@ -14,45 +14,51 @@ const PopOver2 = () => {
     <NavMatter2>
       <div id="nav_matter_block1">
         <div id="nav_matter_block1_content">
-          <h1 onClick={() => toggleTab(1)}>
+          <h1 onClick={() => toggleTab(1)} role="presentation">
             Use Cases
             <RightOutlined className="icon" />
           </h1>
-          <h1 onClick={() => toggleTab(2)}>
+          <h1 onClick={() => toggleTab(2)} role="presentation">
             Roles
             <RightOutlined className="icon" />
           </h1>
-          <h1 onClick={() => toggleTab(2)}>
+          <h1 onClick={() => toggleTab(3)} role="presentation">
             Business Size
             <RightOutlined className="icon" />
           </h1>
         </div>
       </div>
       <div id={toggleState === 1 ? "nav_matter_block2" : "none"}>
-        <Link id="nav_matter_content" to="./hireEmployees">
-          <p1>Hire Employees</p1>
+        <Link id="nav_matter_content" to="/Compliance/">
+          <p1>Compilance</p1>
           <p>Hire Employees abord with our employee service</p>
         </Link>
-        <Link id="nav_matter_content" to="./hireEmployees">
-          <p1>Hire Contractors</p1>
-          <p>Hire Employees abord with our employee service</p>
-        </Link>
-        <Link id="nav_matter_content" to="./payroll">
-          <p1>Run Global Payroll</p1>
+        <Link id="nav_matter_content" to="/Payments/">
+          <p1>Payments</p1>
           <p>Hire Employees abord with our employee service</p>
         </Link>
       </div>
       <div id={toggleState === 2 ? "nav_matter_block2" : "none"}>
-        <Link id="nav_matter_content" to="./hireEmployees">
-          <p1>Hire</p1>
+        <Link id="nav_matter_content" to="/finance-teams/">
+          <p1>For Finance Teams</p1>
           <p>Hire abord with our employee service</p>
         </Link>
-        <Link id="nav_matter_content" to="./hireEmployees">
-          <p1>Hire Contractors</p1>
+        <Link id="nav_matter_content" to="/Legal-teams/">
+          <p1>For Legal Teams</p1>
           <p>Hire abord with our employee service</p>
         </Link>
-        <Link id="nav_matter_content" to="./payroll">
-          <p1>Run Global Payroll</p1>
+        <Link id="nav_matter_content" to="/Hiring-Managers/">
+          <p1>For Hiring Managers</p1>
+          <p>Hire abord with our employee service</p>
+        </Link>
+      </div>
+      <div id={toggleState === 3 ? "nav_matter_block2" : "none"}>
+        <Link id="nav_matter_content" to="/StartUp/">
+          <p1>Startup</p1>
+          <p>Hire abord with our employee service</p>
+        </Link>
+        <Link id="nav_matter_content" to="/Enterprise/">
+          <p1>Enterprise</p1>
           <p>Hire abord with our employee service</p>
         </Link>
       </div>

@@ -175,7 +175,7 @@ export const FlexibilitySection = styled.div`
   position: relative;
   width: 86.9064748201439vw;
   margin: auto;
-  padding-top: 10.7913669064748vw;
+  padding: 10.7913669064748vw 0;
 `
 export const ImageContainer2 = styled.div`
   position: absolute;
@@ -190,7 +190,7 @@ export const DataContainer = styled.div`
   border-top-right-radius: 1.15107913669065vw;
   border-bottom-right-radius: 1.15107913669065vw;
   width: 56.1151079136691vw;
-  margin-top:22vw;
+  margin-top:21.5vw;
   h1 {
     font-size: 3.4vw;
     line-height: 1.36;

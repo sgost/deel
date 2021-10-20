@@ -36,29 +36,29 @@ const Register = () => {
             <h1>Join the waitlist</h1>
             <div id="Register_form_real">
               <div id="input1">
-                <label>Company name</label>
+                <label id="label" htmlFor="title">Company name</label>
                 <input type="text" placeholder="Deel" />
               </div>
               <div id="input2">
                 <div id="input2_b1">
-                  <label>Work Email Address</label>
+                  <label id="label" htmlFor="title">Work Email Address</label>
                   <input type="text" placeholder="John@letsDeel.com" />
                 </div>
                 <div id="input2_b1">
-                  <label>Website URL</label>
+                  <label id="label" htmlFor="title">Website URL</label>
                   <input type="text" placeholder="www.letsdeel.com" />
                 </div>
               </div>
               <div id="input1">
-                <label>Which countries would you like to run payroll in?</label>
+                <label id="label" htmlFor="title">Which countries would you like to run payroll in?</label>
                 <input type="text" placeholder="UnitesStates Canada" />
               </div>
               <div id="input1">
-                <label>What tool do you use now?</label>
+                <label id="label" htmlFor="title">What tool do you use now?</label>
                 <input type="text" placeholder="ADP Rippling" />
               </div>
               <div id="input1">
-                <label>How many employees do you want to pay?</label>
+                <label id="label" htmlFor="title">How many employees do you want to pay?</label>
                 <Form.Item
                   name="gender"
                   rules={[{ required: true }]}

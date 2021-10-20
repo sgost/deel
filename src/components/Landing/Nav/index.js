@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react"
 import { NavContainer } from "./styles.js"
 import { Link } from "gatsby"
-import { Popover, Button } from "antd"
+import { Popover } from "antd"
 import PopOver from "./PopoverContent"
 import PopOver2 from "./PopOverContent2"
 
@@ -23,6 +23,8 @@ const Nav = () => {
   const [navbar, setNavbar] = useState(false)
   const [navbars, setNavbars] = useState(false)
   const [button, setButton] = useState()
+
+  console.log(button)
 
   const showButton = () => {
     if (window.innerWidth <= -20) {
@@ -52,7 +54,7 @@ const Nav = () => {
     }
   }
 
-  const [open, setOpen] = useState(false)
+  // const [open, setOpen] = useState(false)
 
   const overlayInnerStyle = {
     backgroundColor: `red`,
@@ -67,6 +69,43 @@ const Nav = () => {
     width: `500px`,
   }
 
+  //Nav NavContainer
+
+  const HowItWorks = [
+    {
+      "title": "Hire Employees",
+      "link": "/hireEmployees/",
+      "description": "Hire Employees abord with our employee service",
+    },
+    {
+      "title": "Hire Contractors",
+      "link": "/hireEmployees/",
+      "description": "Hire Employees abord with our employee service",
+    },
+    {
+      "title": "Run Global Payroll",
+      "link": "/payroll/",
+      "description": "Hire Employees abord with our employee service",
+    },
+  ]
+  const HowItWorksResources = [
+    {
+      "title": "About",
+      "link": "/about/",
+      "description": "Learn more about our company and team",
+    },
+    {
+      "title": "Blog",
+      "link": "/blog/",
+      "description": "Official Blog Deel",
+    },
+    {
+      "title": "Run Global Payroll",
+      "link": "/payroll/",
+      "description": "Hire Employees abord with our employee service",
+    },
+  ]
+
   return (
     <NavContainer>
       <div
@@ -74,8 +113,8 @@ const Nav = () => {
           navbar === false
             ? "NavContainer"
             : navbars === true
-            ? "NavContainers"
-            : "NavContainer2"
+              ? "NavContainers"
+              : "NavContainer2"
         }
       >
         <div id="navLogo">
@@ -88,7 +127,7 @@ const Nav = () => {
             <Popover
               placement="bottomLeft"
               trigger="click"
-              content={PopOver}
+              content={<PopOver HowItWorks={HowItWorks} />}
               id={id}
               overlay={overlay}
               overlayInnerStyle={overlayInnerStyle}
@@ -108,15 +147,27 @@ const Nav = () => {
               overlayInnerStyle={overlayInnerStyle}
             >
               <h1 id="nav_link">
-              Solutions<div id="span"></div>
+                Solutions<div id="span"></div>
               </h1>
             </Popover>
             <div id="span"></div>
           </div>
           <div id="navTitle">
-            <h1 id="nav_link" onClick={() => setOpen(true)}>
+            <Link to="/blog" id="nav_link">
+              Resources
+            </Link>
+            {/* <Popover
+              placement="bottomLeft"
+              trigger="click"
+              content={<PopOver HowItWorks={HowItWorksResources} />}
+              id={id}
+              overlay={overlay}
+              overlayInnerStyle={overlayInnerStyle}
+            >
+              <h1 id="nav_link">
               Resources<div id="span"></div>
-            </h1>
+              </h1>
+            </Popover> */}
             <div id="span"></div>
           </div>
           <Link id="nav_link">Global Hiring Guide</Link>

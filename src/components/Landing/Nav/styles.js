@@ -15,7 +15,8 @@ export const NavContainer = styled.div`
   }
   #NavContainers {
     display: flex;
-    background: white;
+    background: radial-gradient(69.3% 63.46% at 11.17% 10.02%, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 0.01%, rgba(200, 200, 200, 0.1) 100%);
+    backdrop-filter: blur(120px);
     padding: 0.719424460431655vw 3.59712230215827vw;
     position: fixed;
     width: 100vw;
@@ -32,7 +33,7 @@ export const NavContainer = styled.div`
     display: flex;
     width: fit-content;
     height: fit-content;
-    margin: auto;
+    margin: auto auto auto 0;
     justify-content:center;
     align-items:center;
     #navTitle {
@@ -83,7 +84,7 @@ export const NavContainer = styled.div`
       margin-left: 2.15827338129496vw;
       outline: none;
       background: none;
-      border: 0.143884892086331vw solid white;
+      border: none;
       border-radius: 2.15827338129496vw;
     }
   }
