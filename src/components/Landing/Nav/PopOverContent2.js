@@ -14,15 +14,15 @@ const PopOver2 = () => {
     <NavMatter2>
       <div id="nav_matter_block1">
         <div id="nav_matter_block1_content">
-          <h1 onClick={() => toggleTab(1)}>
+          <h1 onClick={() => toggleTab(1)} role="presentation">
             Use Cases
             <RightOutlined className="icon" />
           </h1>
-          <h1 onClick={() => toggleTab(2)}>
+          <h1 onClick={() => toggleTab(2)} role="presentation">
             Roles
             <RightOutlined className="icon" />
           </h1>
-          <h1 onClick={() => toggleTab(3)}>
+          <h1 onClick={() => toggleTab(3)} role="presentation">
             Business Size
             <RightOutlined className="icon" />
           </h1>
