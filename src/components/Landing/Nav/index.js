@@ -170,8 +170,8 @@ const Nav = () => {
             </Popover> */}
             <div id="span"></div>
           </div>
-          <Link id="nav_link">Global Hiring Guide</Link>
-          <Link id="nav_link">Pricing</Link>
+          <Link id="nav_link" to="./global-hiring-guide">Global Hiring Guide</Link>
+          <Link id="nav_link" to="./pricing">Pricing</Link>
         </div>
         <div id="navBtn">
           <Link id="nav_link">Login</Link>
