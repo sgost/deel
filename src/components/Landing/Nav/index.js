@@ -56,19 +56,6 @@ const Nav = () => {
 
   // const [open, setOpen] = useState(false)
 
-  const overlayInnerStyle = {
-    backgroundColor: `red`,
-    width: `500px`,
-  }
-  const overlay = {
-    backgroundColor: `green`,
-    width: `500px`,
-  }
-  const id = {
-    backgroundColor: `green`,
-    width: `500px`,
-  }
-
   //Nav NavContainer
 
   const HowItWorks = [
@@ -88,23 +75,23 @@ const Nav = () => {
       "description": "Hire Employees abord with our employee service",
     },
   ]
-  const HowItWorksResources = [
-    {
-      "title": "About",
-      "link": "/about/",
-      "description": "Learn more about our company and team",
-    },
-    {
-      "title": "Blog",
-      "link": "/blog/",
-      "description": "Official Blog Deel",
-    },
-    {
-      "title": "Run Global Payroll",
-      "link": "/payroll/",
-      "description": "Hire Employees abord with our employee service",
-    },
-  ]
+  // const HowItWorksResources = [
+  //   {
+  //     "title": "About",
+  //     "link": "/about/",
+  //     "description": "Learn more about our company and team",
+  //   },
+  //   {
+  //     "title": "Blog",
+  //     "link": "/blog/",
+  //     "description": "Official Blog Deel",
+  //   },
+  //   {
+  //     "title": "Run Global Payroll",
+  //     "link": "/payroll/",
+  //     "description": "Hire Employees abord with our employee service",
+  //   },
+  // ]
 
   return (
     <NavContainer>
@@ -126,11 +113,7 @@ const Nav = () => {
           <div id="navTitle">
             <Popover
               placement="bottomLeft"
-              trigger="click"
               content={<PopOver HowItWorks={HowItWorks} />}
-              id={id}
-              overlay={overlay}
-              overlayInnerStyle={overlayInnerStyle}
             >
               <h1 id="nav_link">
                 How it works<div id="span"></div>
@@ -140,11 +123,7 @@ const Nav = () => {
           <div id="navTitle">
             <Popover
               placement="bottomLeft"
-              trigger="click"
               content={PopOver2}
-              id={id}
-              overlay={overlay}
-              overlayInnerStyle={overlayInnerStyle}
             >
               <h1 id="nav_link">
                 Solutions<div id="span"></div>
@@ -158,11 +137,7 @@ const Nav = () => {
             </Link>
             {/* <Popover
               placement="bottomLeft"
-              trigger="click"
               content={<PopOver HowItWorks={HowItWorksResources} />}
-              id={id}
-              overlay={overlay}
-              overlayInnerStyle={overlayInnerStyle}
             >
               <h1 id="nav_link">
               Resources<div id="span"></div>
@@ -174,8 +149,8 @@ const Nav = () => {
           <Link id="nav_link" to="./pricing">Pricing</Link>
         </div>
         <div id="navBtn">
-          <Link id="nav_link">Login</Link>
-          <button>Request a demo</button>
+          <Link id="nav_link" to="./login">Login</Link>
+          <Link to="./request-a-demo"><button>Request a demo</button></Link>
         </div>
       </div>
     </NavContainer>

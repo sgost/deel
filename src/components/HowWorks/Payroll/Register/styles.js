@@ -200,7 +200,7 @@ export const Solution = styled.div`
   }
   #card_container_matter h3 {
     color: ${palette.PRIMARY_TXT_COLOR};
-    font-size: 24px;
+    font-size: 1.72661870503597vw;
     line-height: 1.72;
     font-weight: 400;
   }

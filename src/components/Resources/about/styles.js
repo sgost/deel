@@ -119,8 +119,8 @@ export const HelloContainer = styled.div`
 width:100%;
 height:fit-content;
 background:#fb5d96;
-padding:120px 0;
-margin-top:120px;
+padding:8.63309352517986vw 0;
+margin-top:8.63309352517986vw;
 #helloContainerText{
   width:100%;
   display:flex;
@@ -129,17 +129,17 @@ margin-top:120px;
   align-items:center;
 }
 #helloContainerText h1{
-  font-size:64px;
+  font-size:4.60431654676259vw;
   line-height:1.36;
   font-weight:700;
   color:white;
-  margin-bottom:30px;
+  margin-bottom:2.15827338129496vw;
 }
 #helloContainerText p{
-  font-size:16px;
+  font-size:1.15107913669065vw;
   line-height:1.72;
   color:white;
-  margin-bottom:24px;
+  margin-bottom:1.72661870503597vw;
 }
 #helloContainerBanner{
   position:relative;
@@ -148,16 +148,16 @@ margin-top:120px;
   margin:auto;
 }
 #helloContainerBanner img{
-  width:1105.6px;
-  height:765.36px;
+  width:79.5395683453237vw;
+  height:55.0618705035971vw;
 }
 `
 
 export const Gallery = styled.div`
 width:100%;
-padding:126px 0 100px 0;
+padding:9.06474820143885vw 0 7.19424460431655vw 0;
 #GalleryText{
-  width:540px;
+  width:38.8489208633094vw;
   display:flex;
   flex-direction:column;
   justify-content:center;
@@ -165,25 +165,25 @@ padding:126px 0 100px 0;
   margin:auto;
 }
 #GalleryText h1{
-  font-size:34px;
+  font-size:2.44604316546763vw;
   font-weight:500;
   color:${palette.PRIMARY_TXT_COLOR};
-  margin-bottom:10px;
+  margin-bottom:0.719424460431655vw;
 }
 #GalleryText p{
-  font-size:16px;
+  font-size:1.15107913669065vw;
   line-height:1.72;
   color:${palette.PRIMARY_TXT_COLOR};
-  margin-bottom:24px;
+  margin-bottom:1.72661870503597vw;
   text-align:center;
 }
 #GalleryImages{
   display:grid;
   grid-template-columns:auto auto auto;
-  width:1160px;
-  height:827px;
-  margin:40px auto auto auto;
-  gap:15px;
+  width:83.4532374100719vw;
+  height:59.4964028776978vw;
+  margin:2.87769784172662vw auto auto auto;
+  gap:1.07913669064748vw;
 }
 #GalleryImages #img{
   position:relative

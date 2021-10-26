@@ -47,6 +47,9 @@ export const NavContainer = styled.div`
         font-weight: 700;
         color: white;
       }
+      .navPopover {
+        display: none !important;
+      }
     }
     #nav_link {
       font-size: 1.07913669064748vw;
@@ -98,6 +101,10 @@ export const NavContainer = styled.div`
 
   #NavContainers #navLNks #navTitle p {
     color: ${palette.PRIMARY_TXT_COLOR};
+  }
+
+  #NavContainer #navLogo #logo span{
+    color:${palette.PRIMARY_TXT_COLOR}
   }
 
   #NavContainers #navLNks #nav_link {

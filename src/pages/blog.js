@@ -42,7 +42,7 @@ const Blog = () => {
                     <h1>Deel Blog & Resources</h1>
                     <div id="search">
                         <input type="search" id="search_bar" placeholder="search..." />
-                        <SearchOutlined id="search_logo" />
+                        <SearchOutlined className="search_logo" />
                     </div>
                     <div id="search_links">
                         <Link id="Links">Compaliance</Link>
