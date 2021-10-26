@@ -61,10 +61,10 @@ const Pricing = () => {
                         {
                             open ?
                                 <>
-                                    <h2><img src="https://assets.website-files.com/601ac25738ddfb7beea0c682/602d80b9d603ec46c635ccb3_blue%20tick.svg" className="icon" />Hire contractors from 150 countries in minutes</h2>
-                                    <h2><img src="https://assets.website-files.com/601ac25738ddfb7beea0c682/602d80b9d603ec46c635ccb3_blue%20tick.svg" className="icon" />Hire contractors from 150 countries in minutes</h2>
-                                    <h2><img src="https://assets.website-files.com/601ac25738ddfb7beea0c682/602d80b9d603ec46c635ccb3_blue%20tick.svg" className="icon" />Hire contractors from 150 countries in minutes</h2>
-                                    <h2><img src="https://assets.website-files.com/601ac25738ddfb7beea0c682/602d80b9d603ec46c635ccb3_blue%20tick.svg" className="icon" />Hire contractors from 150 countries in minutes</h2>
+                                    <h2><img src="https://assets.website-files.com/601ac25738ddfb7beea0c682/602d80b9d603ec46c635ccb3_blue%20tick.svg" alt="img" className="icon" />Hire contractors from 150 countries in minutes</h2>
+                                    <h2><img src="https://assets.website-files.com/601ac25738ddfb7beea0c682/602d80b9d603ec46c635ccb3_blue%20tick.svg" alt="img" className="icon" />Hire contractors from 150 countries in minutes</h2>
+                                    <h2><img src="https://assets.website-files.com/601ac25738ddfb7beea0c682/602d80b9d603ec46c635ccb3_blue%20tick.svg" alt="img" className="icon" />Hire contractors from 150 countries in minutes</h2>
+                                    <h2><img src="https://assets.website-files.com/601ac25738ddfb7beea0c682/602d80b9d603ec46c635ccb3_blue%20tick.svg" alt="img" className="icon" />Hire contractors from 150 countries in minutes</h2>
                                 </>
                                 :
                                 ("")

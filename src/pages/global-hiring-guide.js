@@ -16,9 +16,8 @@ const GlobalHiringGuide = () => {
 
   const slider = useRef(null)
 
-
   return (
-    <>
+    <Fragment>
       <Banner />
       <TrustSection>
         <div id="Trust_container">
@@ -289,7 +288,7 @@ const GlobalHiringGuide = () => {
         </div>
       </TrustSectionRating>
       <Footer/>
-    </>
+    </Fragment>
   )
 }
 export default GlobalHiringGuide

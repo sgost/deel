@@ -255,7 +255,7 @@ export const EmployeesDeel = styled.div`
     flex-direction: column;
     padding:2vw;
     border-radius:1.2vw;
-    box-shadow:0 4px 12px 0 rgb(0 0 0 / 15%);
+    box-shadow:0 1.00719424460432vw 0.863309352517986vw 0 rgb(0 0 0 / 15%);
     transition:0.5s ease-in-out;
     cursor:pointer;
     transform:translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);

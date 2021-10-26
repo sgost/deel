@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
-import { NavMatter, NavMatter2 } from "./styles.js"
+import { NavMatter2 } from "./styles.js"
 import { RightOutlined } from "@ant-design/icons"
 
 const PopOver2 = () => {
