@@ -225,6 +225,7 @@ export const NavContainer2 = styled.div`
     padding:40px 30px;
     position:fixed;
     z-index:2;
+    display:none;
   }
   #mob_nav #mob_nav_container {
     border-bottom: 1px solid #7c8286;
