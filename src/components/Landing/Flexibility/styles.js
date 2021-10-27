@@ -3,9 +3,13 @@ import * as palette from "../../../styles/variables"
 
 export const FlexibilitySection = styled.div`
   position: relative;
-  width: 86.9064748201439vw;
+  width: fit-content;
   margin: auto;
   padding-top: 10.7913669064748vw;
+  @media (max-width: 750px) {
+    width: 100%;
+    height: fit-content;
+  }
 `
 export const ImageContainer = styled.div`
   position: absolute;
@@ -13,12 +17,18 @@ export const ImageContainer = styled.div`
   img {
     border-radius: 1.15107913669065vw;
   }
+  @media (max-width: 750px) {
+    height: 190vw;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
 `
 export const DataContainer = styled.div`
   margin: 7.19424460431655vw 20.1438848920863vw 4.31654676258993vw
     7.19424460431655vw;
   background-color: ${palette.APP_BACKGROUND_COLOR};
-  border: 0.0719424460431655vw solid yellow;
   padding: 3.45323741007194vw;
   border-radius: 1.15107913669065vw;
   width: fit-content;
@@ -44,5 +54,52 @@ export const DataContainer = styled.div`
     color: ${palette.SECONDARY_TXT_COLOR};
     line-height: 1.36;
     font-weight: 500;
+    display: flex;
+    align-items: center;
+    transition: 0.5s ease-in-out;
+    .icon {
+      margin-left: 1vw;
+      transition: 0.5s ease-in-out;
+    }
+  }
+  #Link:hover {
+    transition: 0.5s ease-in-out;
+    .icon {
+      transition: 0.5s ease-in-out;
+      margin-left: 2vw;
+    }
+  }
+  @media (max-width: 750px) {
+    margin: 15vw auto;
+    width: 91vw;
+    padding: 9vw 5vw;
+    border-radius: 4vw;
+    h1 {
+      font-size: 9vw;
+      width: 70vw;
+    }
+    #data_matter {
+      display: grid;
+      grid-template-columns: auto;
+      gap: 5vw;
+      margin: 5vw 0;
+    }
+    #data_matter p {
+      font-size: 4.5vw;
+    }
+    #Link {
+      font-size: 4vw;
+      display: flex;
+      align-items: center;
+      .icon {
+        margin-left: 3vw;
+      }
+    }
+    #Link:hover {
+      .icon {
+        display: flex;
+        margin-left: 4vw;
+      }
+    }
   }
 `

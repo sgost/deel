@@ -33,6 +33,21 @@ const Trust = ({ color }) => {
         <img src="https://assets.website-files.com/601ac25738ddfb7beea0c682/611be0d923d782a28fbebbb7_spendesk.svg" alt="img" />
         <img src="https://assets.website-files.com/601ac25738ddfb7beea0c682/611be0d801914fabdbb1ad02_andela.svg" alt="img" />
       </div>
+      <marquee  direction="left" behavior="scroll" id="Trust_container3">
+        <img src="https://assets.website-files.com/601ac25738ddfb7beea0c682/611be0d8c0c26bfa1c8e028d_dropbox.svg" alt="img" />
+        <img src="https://assets.website-files.com/601ac25738ddfb7beea0c682/611be0d9ddbd3511dda6cecf_shopify.svg" alt="img" />
+        <img src="https://assets.website-files.com/601ac25738ddfb7beea0c682/611be0d8d3d7fc2b11270538_intercom.svg" alt="img" />
+        <img src="https://assets.website-files.com/601ac25738ddfb7beea0c682/611be0d83041b24b6900aa05_dlocal.svg" alt="img" />
+        <img src="https://assets.website-files.com/601ac25738ddfb7beea0c682/611be0d9d0dfca14db073bec_alan.svg" alt="img" />
+        <img src="https://assets.website-files.com/601ac25738ddfb7beea0c682/611be0d9d0dfca2aa2073beb_notion.svg" alt="img" />
+        <img src="https://assets.website-files.com/601ac25738ddfb7beea0c682/611be0da48c8da573d497d4c_airtable.svg" alt="img" />
+        <img src="https://assets.website-files.com/601ac25738ddfb7beea0c682/611be0d885d314774752045b_mercury.svg" alt="img" />
+        <img src="https://assets.website-files.com/601ac25738ddfb7beea0c682/611be0d805e28e1efd95c909_superhuman.svg" alt="img" />
+        <img src="https://assets.website-files.com/601ac25738ddfb7beea0c682/611be0d822e3eb365adf65e0_voi.svg" alt="img" />
+        <img src="https://assets.website-files.com/601ac25738ddfb7beea0c682/611be0d923d782a28fbebbb7_spendesk.svg" alt="img" />
+        <img src="https://assets.website-files.com/601ac25738ddfb7beea0c682/611be0d801914fabdbb1ad02_andela.svg" alt="img" />
+      </marquee >
+      <button id="button">View country availablity</button>
       <div id="CardsContainer">
         <div id="Cards">
           <div id="cardData">
@@ -65,7 +80,7 @@ const Trust = ({ color }) => {
             </Link>
           </div>
           <div id="cardImage">
-            <img src={img1} alt="img" />
+            <img src="https://assets.website-files.com/601ac25738ddfb7beea0c682/610aa07c9200a42c72e934dc_complianceimage2-p-800.jpeg" alt="img" />
           </div>
         </div>
         <div id="Cards">
@@ -82,7 +97,7 @@ const Trust = ({ color }) => {
             </Link>
           </div>
           <div id="cardImage">
-            <img src={img1} alt="img" />
+            <img src="https://assets.website-files.com/601ac25738ddfb7beea0c682/610aa07ef3ced919c6137952_paymentsui-p-800.jpeg" alt="img" />
           </div>
         </div>
       </div>

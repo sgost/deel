@@ -6,11 +6,11 @@ import Nav from "../Nav"
 const Banner = () => {
   return (
     <>
-    <Nav/>
-    <BannerSection>
+      <Nav />
+      <BannerSection>
         <ImageConteiner>
-          <img src={BannerImage} alt="img" id="img1"/>
-          </ImageConteiner>
+          <img src={BannerImage} alt="img" id="img1" />
+        </ImageConteiner>
         <div id="banner_container">
           <h1>The platform built for today's</h1>
           <h2>world of work</h2>
@@ -21,7 +21,7 @@ const Banner = () => {
           </p>
           <button>Request a demo</button>
         </div>
-    </BannerSection>
+      </BannerSection>
     </>
   )
 }
