@@ -2,6 +2,7 @@ import React from "react"
 import { FlexibilitySection, ImageContainer, DataContainer } from "./styles.js"
 import img from "../../../data/assets/7.jpg"
 import { Link } from "gatsby"
+import { ArrowRightOutlined } from "@ant-design/icons"
 
 const Flexibility = () => {
   return (
@@ -23,7 +24,9 @@ const Flexibility = () => {
             anywhere without a worry.
           </p>
         </div>
-        <Link id="Link">View Our Global Hiring Guide</Link>
+        <Link id="Link">
+          View Our Global Hiring Guide <ArrowRightOutlined className="icon" />
+        </Link>
       </DataContainer>
     </FlexibilitySection>
   )

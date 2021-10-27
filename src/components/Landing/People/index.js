@@ -4,7 +4,7 @@ import img from "../../../data/assets/8.jpg"
 import { Link } from "gatsby"
 import { Carousel } from "react-bootstrap"
 import "bootstrap/dist/css/bootstrap.min.css"
-import { LeftOutlined, RightOutlined } from '@ant-design/icons';
+import { LeftOutlined, RightOutlined, ArrowRightOutlined } from '@ant-design/icons';
 
 const People = () => {
   const PeopleData = [
@@ -57,7 +57,7 @@ const People = () => {
             <div id="image_matter">
               <h1>{PeopleDatas.head}</h1>
               <p>{PeopleDatas.description}</p>
-              <Link id="Link">Learn more</Link>
+              <Link id="Link">Learn more<ArrowRightOutlined className="icon" /></Link>
             </div>
           </div>
         </div>
@@ -65,8 +65,8 @@ const People = () => {
                 )}
       </Carousel>
       <div id="btn">
-        <span aria-hidden="true" className="carousel-control-prev-icon" id="l" onClick={() => slider.current.prev()}><LeftOutlined style={{ fontSize: '20px', fontWeight: `bold` }} /></span>
-        <span aria-hidden="true" className="carousel-control-next-icon" onClick={() => slider.current.next()}><RightOutlined style={{ fontSize: '20px', fontWeight: `bold`, marginLeft: `50px` }}/></span>
+        <span aria-hidden="true" className="carousel-control-prev-icon" id="l" onClick={() => slider.current.prev()}><LeftOutlined style={{ fontSize: '20px', fontWeight: `bold`, color: `#15357a` }} /></span>
+        <span aria-hidden="true" className="carousel-control-next-icon" onClick={() => slider.current.next()}><RightOutlined style={{ fontSize: '20px', fontWeight: `bold`, color: `#15357a`, marginLeft: `50px` }}/></span>
         </div>
     </PeopleSection>
   )

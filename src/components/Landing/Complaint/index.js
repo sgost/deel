@@ -1,6 +1,5 @@
 import React from "react";
 import { ComplaintSection, ComplaintContainerMain, ComplaintContainerCards, ComplaintContainerIcon, ComplaintContainerMatter } from "./styles.js"
-import img from "../../../data/assets/book.svg"
 
 const Complaint = () => {
 
@@ -18,7 +17,7 @@ const Complaint = () => {
             <ComplaintContainerMain>
                 <ComplaintContainerCards>
                     <ComplaintContainerIcon>
-                        <img src={img} alt="img"/>
+                        <img src="https://assets.website-files.com/601ac25738ddfb7beea0c682/6113cddaffbf7c3eccd0ca16_its-our-liability.svg" alt="img"/>
                     </ComplaintContainerIcon>
                     <ComplaintContainerMatter>
                         <h1>It's Our Liability, Not Yours</h1>
@@ -27,7 +26,7 @@ const Complaint = () => {
                 </ComplaintContainerCards>
                 <ComplaintContainerCards>
                     <ComplaintContainerIcon>
-                        <img src={img} alt="img"/>
+                        <img src="https://assets.website-files.com/601ac25738ddfb7beea0c682/6113cd85a9ad5e4ed249aecd_GDPR-icon.svg" alt="img"/>
                     </ComplaintContainerIcon>
                     <ComplaintContainerMatter>
                         <h1>It's Our Liability, Not Yours</h1>
@@ -36,7 +35,7 @@ const Complaint = () => {
                 </ComplaintContainerCards>
                 <ComplaintContainerCards>
                     <ComplaintContainerIcon>
-                        <img src={img} alt="img"/>
+                        <img src="https://assets.website-files.com/601ac25738ddfb7beea0c682/6113cdda5cd7a24983ae0cb2_always-on.svg" alt="img"/>
                     </ComplaintContainerIcon>
                     <ComplaintContainerMatter>
                         <h1>It's Our Liability, Not Yours</h1>
@@ -45,7 +44,7 @@ const Complaint = () => {
                 </ComplaintContainerCards>
                 <ComplaintContainerCards>
                     <ComplaintContainerIcon>
-                        <img src={img} alt="img"/>
+                        <img src="https://assets.website-files.com/601ac25738ddfb7beea0c682/6113cd86a7cb92770ec9df71_your-ip-safe.svg" alt="img"/>
                     </ComplaintContainerIcon>
                     <ComplaintContainerMatter>
                         <h1>It's Our Liability, Not Yours</h1>

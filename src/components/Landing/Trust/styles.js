@@ -31,6 +31,12 @@ export const TrustSection = styled.div`
     margin-top: 0.719424460431655vw;
     color: ${palette.PRIMARY_TXT_COLOR};
   }
+  #Trust_container3 {
+    display: none;
+  }
+  #button {
+    display: none;
+  }
   #Trust_container2 {
     display: grid;
     grid-template-columns: repeat(6, auto);
@@ -83,19 +89,110 @@ export const TrustSection = styled.div`
     font-weight: 400;
     line-height: 1.72;
     display: flex;
-    transition:0.5s ease-out;
+    transition: 0.5s ease-out;
     .icon {
       margin: 0.719424460431655vw 0 0 0.719424460431655vw;
     }
   }
   #CardsContainer #Cards #cardData #link:hover {
-    transition:0.5s ease-out;
+    transition: 0.5s ease-out;
     .icon {
       margin: 0.719424460431655vw 0 0 1vw;
-      transition:0.5s ease-out;
+      transition: 0.5s ease-out;
     }
   }
   #CardsContainer #Cards:nth-child(even) #cardImage {
     margin: 0 auto 0 0;
+  }
+
+  @media (max-width: 750px) {
+    padding: 20vw 0 6vw 0;
+    #Trust_container h1 {
+      font-size: 9vw;
+      font-weight: bold;
+      line-height: 11vw;
+      width: 90vw;
+      text-align: center;
+      color: #15357a;
+    }
+    #Trust_container h2 {
+      font-size: 4vw;
+      font-weight: 400;
+      line-height: 10vw;
+      width: 90vw;
+      text-align: center;
+      margin-top: 5vw;
+      color: #15357a;
+      text-align: center;
+    }
+    #Trust_container2 {
+      display: none;
+    }
+    #Trust_container3 {
+      display: flex;
+      margin: 8vw 0 5vw 0;
+      img {
+        width: 30vw;
+        height: 10vw;
+        margin-left: 20vw;
+      }
+      img:first-child {
+        margin-left: 0;
+      }
+    }
+    #button {
+      display: flex;
+      background: ${palette.SECONDARY_TXT_COLOR};
+      color: white;
+      margin: 2vw auto auto auto;
+      border: none;
+      padding: 3vw 9vw;
+      border-radius: 8vw;
+    }
+    #CardsContainer {
+      padding:30vw 0;
+    }
+    #CardsContainer #Cards {
+      display: flex;
+      flex-direction: column-reverse;
+      padding: 20vw 0 0 0;
+    }
+    #CardsContainer #Cards:nth-child(even) {
+      flex-direction: column-reverse;
+      padding: 20vw 0 0 0;
+    }
+    #CardsContainer #Cards #cardImage {
+      width: 100%;
+      height: 100vw;
+      margin: auto;
+    }
+    #CardsContainer #Cards #cardImage img {
+      width: 100%;
+      height: 100%;
+    }
+    #CardsContainer #Cards #cardData {
+      width: 100%;
+      margin: 20vw 0 0 0;
+      text-align: center;
+    }
+    #CardsContainer #Cards #cardData h1 {
+      font-size: 8.5vw;
+      width: 85vw;
+      margin: auto;
+    }
+    #CardsContainer #Cards #cardData h2 {
+      font-size: 4vw;
+      line-height: 8vw;
+      margin: 3vw 0;
+    }
+    #CardsContainer #Cards #cardData #link {
+      font-size: 4vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #CardsContainer #Cards #cardData #link .icon {
+      margin-left: 3vw;
+    }
   }
 `

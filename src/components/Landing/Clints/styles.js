@@ -37,6 +37,11 @@ export const ClintSectionmain = styled.div`
       height: 100%;
     }
   }
+  @media (max-width: 750px) {
+    #Clints_btn {
+      display: none;
+    }
+  }
 `
 export const ClintSection = styled.div`
   width: fit-content;
@@ -48,6 +53,10 @@ export const ClintSection = styled.div`
   justify-content: center;
   align-items: center;
   padding: 10.7913669064748vw 7.19424460431655vw;
+  @media (max-width: 750px) {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
 `
 export const ClintImage = styled.div``
 export const ClintImageBlock = styled.div`
@@ -82,5 +91,23 @@ export const ClintMatter = styled.div`
     font-weight: 600;
     color: white;
     margin: 3.59712230215827vw auto 2.15827338129496vw 0;
+  }
+  @media (max-width: 750px) {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    h1 {
+      font-size: 4vw;
+      font-weight: 400;
+    }
+    img {
+      width: 100%;
+      max-width: 20vw;
+      height: auto;
+    }
+    p {
+      font-size: 4vw;
+      margin: 5vw auto;
+    }
   }
 `
