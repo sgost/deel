@@ -4,6 +4,10 @@ import * as palette from "../../../../styles/variables"
 export const PayRollSection = styled.div`
   padding: 10vw 0;
   background: #f3f3f3;
+  @media (max-width: 750px) {
+    padding: 10vw 0 35vw 0;
+    background: white;
+  }
 `
 export const CardContainer = styled.div`
   #CardsContainer #Cards {
@@ -65,6 +69,64 @@ export const CardContainer = styled.div`
     line-height: 1.72;
     font-weight: 400;
     color: ${palette.PRIMARY_TXT_COLOR};
+  }
+  @media (max-width: 750px) {
+    #CardsContainer #Cards {
+      flex-direction: column-reverse;
+      padding-top: 40vw;
+    }
+    #CardsContainer #Cards #cardData {
+      width: 100%;
+      padding: 20vw 3vw 30vw 3vw;
+      text-align: center;
+    }
+    #CardsContainer #Cards #cardData #link {
+      display: none;
+    }
+    #CardsContainer #Cards #cardImage {
+      width: 100%;
+      height: 110vw;
+      position: relative;
+    }
+    #CardsContainer #Cards #cardImage img {
+      width: 100%;
+      height: 100%;
+    }
+    #CardsContainer #Cards #cardData h1 {
+      font-weight: 700;
+      color: #15357a;
+      font-size: 8vw;
+      width: 100%;
+    }
+    #CardsContainer #Cards #cardData h2 {
+      font-size: 4.5vw;
+      font-weight: 400;
+      line-height: 1.72;
+      margin: 3vw 0 6vw 0;
+    }
+    #Matters_mini_conteiner {
+      grid-template-columns: auto;
+      gap: 15vw;
+      width: 100%;
+      padding: 0 3vw;
+    }
+    #Matters_mini_conteiner2 {
+      margin: 0;
+      padding-left: 4vw;
+    }
+    #Matters_mini_conteiner2 h1 {
+      margin-bottom: 6vw;
+      font-size: 5vw;
+    }
+    #Matters_mini_conteiner2 p {
+      font-size: 5vw;
+    }
+    #Matters_mini_conteiner_matter #Matters_mini_conteiner1 {
+      img {
+        width: 50px;
+        height: fit-content;
+      }
+    }
   }
 `
 export const CardContainer2 = styled.div`
@@ -138,6 +200,71 @@ export const CardContainer2 = styled.div`
     font-weight: 400;
     color: ${palette.PRIMARY_TXT_COLOR};
   }
+  @media (max-width: 750px) {
+    background: white;
+    margin-top: 40vw;
+    padding: 0 0 18vw 0;
+    #CardsContainer #Cards {
+      flex-direction: column;
+      padding-top: 0;
+    }
+    #CardsContainer #Cards:nth-child(even) {
+      flex-direction: column-reverse;
+      padding-top: 40vw;
+    }
+    #CardsContainer #Cards #cardData {
+      width: 100%;
+      padding: 20vw 3vw 30vw 3vw;
+      text-align: center;
+    }
+    #CardsContainer #Cards #cardData #link {
+      display: none;
+    }
+    #CardsContainer #Cards #cardImage {
+      width: 100%;
+      height: 110vw;
+      position: relative;
+    }
+    #CardsContainer #Cards #cardImage img {
+      width: 100%;
+      height: 100%;
+    }
+    #CardsContainer #Cards #cardData h1 {
+      font-weight: 700;
+      color: #15357a;
+      font-size: 8vw;
+      width: 100%;
+    }
+    #CardsContainer #Cards #cardData h2 {
+      font-size: 4.5vw;
+      font-weight: 400;
+      line-height: 1.72;
+      margin: 3vw 0 6vw 0;
+    }
+    #Matters_mini_conteiner {
+      grid-template-columns: auto;
+      gap: 15vw;
+      width: 100%;
+      padding: 0 3vw;
+    }
+    #Matters_mini_conteiner2 {
+      margin: 0;
+      padding-left: 4vw;
+    }
+    #Matters_mini_conteiner2 h1 {
+      margin-bottom: 6vw;
+      font-size: 5vw;
+    }
+    #Matters_mini_conteiner2 p {
+      font-size: 5vw;
+    }
+    #Matters_mini_conteiner_matter #Matters_mini_conteiner1 {
+      img {
+        width: 50px;
+        height: fit-content;
+      }
+    }
+  }
 `
 
 export const EmployeesDeel = styled.div`
@@ -171,5 +298,32 @@ export const EmployeesDeel = styled.div`
     line-height: 1.72;
     font-weight: 400;
     color: ${palette.PRIMARY_TXT_COLOR};
+  }
+  @media (max-width: 750px) {
+    padding: 40vw 5vw;
+    h1 {
+      font-size: 8.9vw;
+      margin-bottom: 3.59712230215827vw;
+      text-align: center;
+    }
+    #Matters_mini_card {
+      display: grid;
+      grid-template-columns: auto;
+      width: fit-content;
+      margin: 30vw auto auto auto;
+      gap: 28vw;
+      text-align: center;
+    }
+    #Matters_mini_conteiner2 img {
+      width: 30vw;
+      height: 30vw;
+    }
+    #Matters_mini_conteiner2 h1 {
+      margin: 8vw 0 4vw 0;
+      font-size: 5vw;
+    }
+    #Matters_mini_conteiner2 p {
+      font-size: 5vw;
+    }
   }
 `

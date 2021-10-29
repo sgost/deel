@@ -7,18 +7,17 @@ import {
 import { PlusOutlined, MinusOutlined } from "@ant-design/icons"
 
 const Questions = () => {
-  
-  const [opens, setOpens] = useState(true);
-  const [openss, setOpenss] = useState(true);
-  const [opensss, setOpensss] = useState(true);
-  const [open7, setOpen7] = useState(true);
-  const [open8, setOpen8] = useState(true);
-  const [open9, setOpen9] = useState(true);
+  const [opens, setOpens] = useState(true)
+  const [openss, setOpenss] = useState(true)
+  const [opensss, setOpensss] = useState(true)
+  const [open7, setOpen7] = useState(true)
+  const [open8, setOpen8] = useState(true)
+  const [open9, setOpen9] = useState(true)
 
   return (
     <>
       <QuestionSection>
-        <h1>Common questions</h1>
+        <h1>Common <span>questions</span></h1>
         <QuestionSectionContainer>
           <QuestionSectionCards>
             <div id="question">

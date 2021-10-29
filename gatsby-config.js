@@ -6,7 +6,8 @@ module.exports = {
   siteMetadata: {
     title: `gatsby`,
     description: `Gatsby is a React-based open source framework with performance, scalability and security built-in.`,
-    keywords: ['gatsby', 'react']
+    keywords: ['gatsby', 'react'],
+    siteUrl: `https://deel.netlify.app/`,
   },
   plugins: [
     {
@@ -25,6 +26,7 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

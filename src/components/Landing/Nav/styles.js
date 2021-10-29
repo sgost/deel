@@ -218,47 +218,9 @@ export const NavMatter2 = styled.div`
 
 export const NavContainer2 = styled.div`
   z-index: 1;
-  #mob_nav {
-    width: 100%;
-    height: 100%;
-    background: white;
-    padding:40px 30px;
-    position:fixed;
-    z-index:2;
-    display:none;
-  }
-  #mob_nav #mob_nav_container {
-    border-bottom: 1px solid #7c8286;
-  }
-  #mob_nav #mob_nav_container #nav_title {
-    font-size: 14px;
-    font-weight: 500;
-    color: ${palette.PRIMARY_TXT_COLOR};
-    margin: 8vw 0;
-    display:flex;
-    align-items: center;
-  }
-  #mob_nav #mob_nav_container #nav_title .icon{
-    margin-left:10vw;
-  }
-  #mob_nav #mob_nav_container #mob_nav_Links {
-    padding: 4vw 0;
-  }
-  #mob_nav #mob_nav_container #mob_nav_Links #nav_lnks {
+  display: none;
+  @media (max-width: 750px) {
     display: flex;
-    flex-direction: column;
-  }
-  #mob_nav #mob_nav_container #mob_nav_Links #nav_lnks h1 {
-    font-size: 16px;
-    color: ${palette.PRIMARY_TXT_COLOR};
-    font-weight: 400;
-    margin: 2vw 0 0 0;
-  }
-  #mob_nav #mob_nav_container #mob_nav_Links #nav_lnks p {
-    font-size: 12px;
-    color: #7c8286;
-    font-weight: 400;
-    max-width: 220px;
   }
   #NavContainer2 {
     display: none;
@@ -354,5 +316,49 @@ export const NavContainer2 = styled.div`
     border-bottom: 0.143884892086331vw solid ${palette.PRIMARY_TXT_COLOR};
     transform: rotate(-45deg);
     margin: 0.359712230215827vw 0 0 0.719424460431655vw;
+  }
+`
+
+export const NavContainer3 = styled.div`
+  #mob_nav {
+    width: 100%;
+    height: 100%;
+    background: white;
+    padding: 40px 30px;
+    position: fixed;
+    z-index: 2;
+  }
+  #mob_nav #mob_nav_container {
+    border-bottom: 1px solid #7c8286;
+  }
+  #mob_nav #mob_nav_container #nav_title {
+    font-size: 14px;
+    font-weight: 500;
+    color: ${palette.PRIMARY_TXT_COLOR};
+    margin: 8vw 0;
+    display: flex;
+    align-items: center;
+  }
+  #mob_nav #mob_nav_container #nav_title .icon {
+    margin-left: 5vw;
+  }
+  #mob_nav #mob_nav_container #mob_nav_Links {
+    padding: 4vw 0;
+  }
+  #mob_nav #mob_nav_container #mob_nav_Links #nav_lnks {
+    display: flex;
+    flex-direction: column;
+  }
+  #mob_nav #mob_nav_container #mob_nav_Links #nav_lnks h1 {
+    font-size: 16px;
+    color: ${palette.PRIMARY_TXT_COLOR};
+    font-weight: 400;
+    margin: 2vw 0 0 0;
+  }
+  #mob_nav #mob_nav_container #mob_nav_Links #nav_lnks p {
+    font-size: 12px;
+    color: #7c8286;
+    font-weight: 400;
+    max-width: 220px;
   }
 `
