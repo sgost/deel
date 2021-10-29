@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react"
 import { NavContainer, NavContainer2 } from "./styles.js"
 import { Link } from "gatsby"
-import { Popover } from "antd"
+import { Popover, Modal } from "antd"
 import PopOver from "./PopoverContent"
 import PopOver2 from "./PopOverContent2"
-import { MenuOutlined, DownOutlined, UpOutlined } from "@ant-design/icons"
+import Mobile from "./mobile"
+import { MenuOutlined } from "@ant-design/icons"
 
 const Nav = () => {
   useEffect(() => {
@@ -94,16 +95,10 @@ const Nav = () => {
   //   },
   // ]
 
-  const [toggleState, setToggleState] = useState("")
-
-  const toggleTab = index => {
-    setToggleState(index)
-  }
-
-  const [contact, setContact] = useState(false)
+  const [footerPop, setFooterPop] = useState(false)
 
   const handelCancel = () => {
-      setContact(false)
+    setFooterPop(false)
   }
 
   return (
@@ -175,115 +170,24 @@ const Nav = () => {
       </NavContainer>
 
       <NavContainer2>
-          <div id="mob_nav">
-            <div id="mob_nav_container">
-              {toggleState === 1 ? (
-                <h1 id="nav_title" onClick={() => toggleTab(0)}>
-                  How It Works
-                  <UpOutlined className="icon" />
-                </h1>
-              ) : (
-                <h1 id="nav_title" onClick={() => toggleTab(1)}>
-                  How It Works
-                  <DownOutlined className="icon" />
-                </h1>
-              )}
-              {toggleState === 1 ? (
-                <div id="mob_nav_Links">
-                  <Link id="nav_lnks">
-                    <h1>main title</h1>
-                    <p>main title main title</p>
-                  </Link>
-                  <Link id="nav_lnks">
-                    <h1>main title</h1>
-                    <p>main title main title</p>
-                  </Link>
-                  <Link id="nav_lnks">
-                    <h1>main title</h1>
-                    <p>main title main title</p>
-                  </Link>
-                  <Link id="nav_lnks">
-                    <h1>main title</h1>
-                    <p>main title main title</p>
-                  </Link>
-                </div>
-              ) : (
-                ""
-              )}
-            </div>
+        <Modal
+          centered
+          visible={footerPop}
+          width={1000}
+          okButtonProps={{ style: { display: "none" } }}
+          cancelButtonProps={{ style: { display: "none" } }}
+          onCancel={handelCancel}
+          bodyStyle={{ backgroundColor: `white`, height: `100%` }}
+          style={{ backgroundColor: `white`, height: `100%` }}
+          maskStyle={{
+            backgroundColor: `white`,
+            height: `fit-content`,
+            padding: `0`,
+          }}
+        >
+          <Mobile HowItWorks={HowItWorks}/>
+        </Modal>
 
-            <div id="mob_nav_container">
-              {toggleState === 2 ? (
-                <h1 id="nav_title" onClick={() => toggleTab(0)}>
-                  How It Works
-                  <UpOutlined className="icon" />
-                </h1>
-              ) : (
-                <h1 id="nav_title" onClick={() => toggleTab(2)}>
-                  How It Works
-                  <DownOutlined className="icon" />
-                </h1>
-              )}
-              {toggleState === 2 ? (
-                <div id="mob_nav_Links">
-                  <Link id="nav_lnks">
-                    <h1>main title</h1>
-                    <p>main title main title</p>
-                  </Link>
-                  <Link id="nav_lnks">
-                    <h1>main title</h1>
-                    <p>main title main title</p>
-                  </Link>
-                  <Link id="nav_lnks">
-                    <h1>main title</h1>
-                    <p>main title main title</p>
-                  </Link>
-                  <Link id="nav_lnks">
-                    <h1>main title</h1>
-                    <p>main title main title</p>
-                  </Link>
-                </div>
-              ) : (
-                ""
-              )}
-            </div>
-
-            <div id="mob_nav_container">
-              {toggleState === 3 ? (
-                <h1 id="nav_title" onClick={() => toggleTab(0)}>
-                  How It Works
-                  <UpOutlined className="icon" />
-                </h1>
-              ) : (
-                <h1 id="nav_title" onClick={() => toggleTab(3)}>
-                  How It Works
-                  <DownOutlined className="icon" />
-                </h1>
-              )}
-              {toggleState === 3 ? (
-                <div id="mob_nav_Links">
-                  <Link id="nav_lnks">
-                    <h1>main title</h1>
-                    <p>main title main title</p>
-                  </Link>
-                  <Link id="nav_lnks">
-                    <h1>main title</h1>
-                    <p>main title main title</p>
-                  </Link>
-                  <Link id="nav_lnks">
-                    <h1>main title</h1>
-                    <p>main title main title</p>
-                  </Link>
-                  <Link id="nav_lnks">
-                    <h1>main title</h1>
-                    <p>main title main title</p>
-                  </Link>
-                </div>
-              ) : (
-                ""
-              )}
-            </div>
-          </div>
         <div
           id={
             navbar === false
@@ -301,7 +205,11 @@ const Nav = () => {
               <Link id="nav_link" to="./login">
                 Login
               </Link>
-              <MenuOutlined className="icon" onClick={() => setContact(true)}/>
+              <MenuOutlined
+                className="icon"
+                onClick={() => setFooterPop(true)}
+                role="presentation"
+              />
             </div>
           </div>
         </div>

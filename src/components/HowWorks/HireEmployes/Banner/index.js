@@ -82,7 +82,7 @@ const Banner = () => {
         <div id="Matters_mini_conteiner">
           <div id="Matters_mini_conteiner_matter">
             <div id="Matters_mini_conteiner1">
-              <CheckOutlined />
+              <img src="https://assets.website-files.com/601ac25738ddfb7beea0c682/602d80b9d603ec46c635ccb3_blue%20tick.svg" alt="imag"/>
             </div>
             <div id="Matters_mini_conteiner2">
               <h1>Airtight employment contracts</h1>
@@ -95,7 +95,7 @@ const Banner = () => {
           </div>
           <div id="Matters_mini_conteiner_matter">
             <div id="Matters_mini_conteiner1">
-              <CheckOutlined />
+              <img src="https://assets.website-files.com/601ac25738ddfb7beea0c682/602d80b9d603ec46c635ccb3_blue%20tick.svg" alt="imag"/>
             </div>
             <div id="Matters_mini_conteiner2">
               <h1>Airtight employment contracts</h1>
@@ -108,7 +108,7 @@ const Banner = () => {
           </div>
           <div id="Matters_mini_conteiner_matter">
             <div id="Matters_mini_conteiner1">
-              <CheckOutlined />
+              <img src="https://assets.website-files.com/601ac25738ddfb7beea0c682/602d80b9d603ec46c635ccb3_blue%20tick.svg" alt="imag"/>
             </div>
             <div id="Matters_mini_conteiner2">
               <h1>Airtight employment contracts</h1>

@@ -7,8 +7,7 @@ import {
 } from "./styles.js"
 import BannerImage from "../../../../data/assets/6.png"
 import { Link } from "gatsby"
-import { CheckOutlined, ArrowRightOutlined } from "@ant-design/icons"
-import img from "../../../../data/assets/banner2.jpg"
+import { ArrowRightOutlined } from "@ant-design/icons"
 import img2 from "../../../../data/assets/5.jpeg"
 import img3 from "../../../../data/assets/icon1.svg"
 import Clints from "../../../Landing/Clints"
@@ -37,7 +36,7 @@ const PayRoll = () => {
           <div id="Matters_mini_conteiner">
             <div id="Matters_mini_conteiner_matter">
               <div id="Matters_mini_conteiner1">
-                <CheckOutlined />
+                <img src="https://assets.website-files.com/601ac25738ddfb7beea0c682/602d80b9d603ec46c635ccb3_blue%20tick.svg" alt="imag"/>
               </div>
               <div id="Matters_mini_conteiner2">
                 <h1>Airtight employment contracts</h1>
@@ -50,7 +49,7 @@ const PayRoll = () => {
             </div>
             <div id="Matters_mini_conteiner_matter">
               <div id="Matters_mini_conteiner1">
-                <CheckOutlined />
+                <img src="https://assets.website-files.com/601ac25738ddfb7beea0c682/602d80b9d603ec46c635ccb3_blue%20tick.svg" alt="imag"/>
               </div>
               <div id="Matters_mini_conteiner2">
                 <h1>Airtight employment contracts</h1>
@@ -63,7 +62,7 @@ const PayRoll = () => {
             </div>
             <div id="Matters_mini_conteiner_matter">
               <div id="Matters_mini_conteiner1">
-                <CheckOutlined />
+                <img src="https://assets.website-files.com/601ac25738ddfb7beea0c682/602d80b9d603ec46c635ccb3_blue%20tick.svg" alt="imag"/>
               </div>
               <div id="Matters_mini_conteiner2">
                 <h1>Airtight employment contracts</h1>
@@ -100,7 +99,7 @@ const PayRoll = () => {
           <div id="Matters_mini_conteiner">
             <div id="Matters_mini_conteiner_matter">
               <div id="Matters_mini_conteiner1">
-                <CheckOutlined />
+                <img src="https://assets.website-files.com/601ac25738ddfb7beea0c682/602d80b9d603ec46c635ccb3_blue%20tick.svg" alt="imag"/>
               </div>
               <div id="Matters_mini_conteiner2">
                 <h1>Airtight employment contracts</h1>
@@ -113,7 +112,7 @@ const PayRoll = () => {
             </div>
             <div id="Matters_mini_conteiner_matter">
               <div id="Matters_mini_conteiner1">
-                <CheckOutlined />
+                <img src="https://assets.website-files.com/601ac25738ddfb7beea0c682/602d80b9d603ec46c635ccb3_blue%20tick.svg" alt="imag"/>
               </div>
               <div id="Matters_mini_conteiner2">
                 <h1>Airtight employment contracts</h1>
@@ -126,7 +125,7 @@ const PayRoll = () => {
             </div>
             <div id="Matters_mini_conteiner_matter">
               <div id="Matters_mini_conteiner1">
-                <CheckOutlined />
+                <img src="https://assets.website-files.com/601ac25738ddfb7beea0c682/602d80b9d603ec46c635ccb3_blue%20tick.svg" alt="imag"/>
               </div>
               <div id="Matters_mini_conteiner2">
                 <h1>Airtight employment contracts</h1>
@@ -139,7 +138,7 @@ const PayRoll = () => {
             </div>
             <div id="Matters_mini_conteiner_matter">
               <div id="Matters_mini_conteiner1">
-                <CheckOutlined />
+                <img src="https://assets.website-files.com/601ac25738ddfb7beea0c682/602d80b9d603ec46c635ccb3_blue%20tick.svg" alt="imag"/>
               </div>
               <div id="Matters_mini_conteiner2">
                 <h1>Airtight employment contracts</h1>
