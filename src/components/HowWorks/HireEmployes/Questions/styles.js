@@ -9,6 +9,18 @@ export const QuestionSection = styled.div`
     font-size: 3.45323741007194vw;
     margin-bottom: 3.59712230215827vw;
   }
+  @media (max-width: 750px) {
+    padding: 20vw 6vw;
+    h1 {
+      font-weight: 300;
+      font-size: 9vw;
+      margin-bottom: 3.59712230215827vw;
+      text-align: center;
+    }
+    h1 span {
+      font-weight: 700;
+    }
+  }
 `
 
 export const QuestionSectionContainer = styled.div`
@@ -16,6 +28,10 @@ export const QuestionSectionContainer = styled.div`
   display: grid;
   grid-template-columns: 41.9424460431655vw 41.9424460431655vw;
   column-gap: 4.60431654676259vw;
+  @media (max-width: 750px) {
+    grid-template-columns: auto;
+    padding-top:8vw;
+  }
 `
 
 export const QuestionSectionCards = styled.div`
@@ -41,5 +57,27 @@ export const QuestionSectionCards = styled.div`
   #question h1 .icon {
     color: ${palette.PRIMARY_TXT_COLOR};
     margin-left: auto;
+  }
+  @media (max-width: 750px) {
+    #question h1 {
+      margin: 0.719424460431655vw 0;
+      font-size: 4vw;
+      display: flex;
+      width: 60vw;
+      text-align: left;
+      position: relative;
+      margin: 5vw 0;
+    }
+    #question h1 .icon {
+      position: absolute;
+      right: -25vw;
+    }
+    #question p {
+      font-size: 4vw;
+      line-height: 1.72;
+      font-weight: 400;
+      color: #15357a;
+      margin-top: 2.15827338129496vw;
+    }
   }
 `
