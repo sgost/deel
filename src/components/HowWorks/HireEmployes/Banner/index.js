@@ -12,7 +12,6 @@ import {
 } from "./styles.js"
 import BannerImage from "../../../../data/assets/1.jpeg"
 import { Link } from "gatsby"
-import { CheckOutlined } from "@ant-design/icons"
 import img from "../../../../data/assets/banner2.jpg"
 
 const Banner = () => {

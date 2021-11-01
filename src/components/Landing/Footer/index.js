@@ -16,7 +16,6 @@ import {
   DownOutlined,
   UpOutlined,
 } from "@ant-design/icons"
-import { Link } from "gatsby"
 
 const Footer = () => {
   const [toggleState, setToggleState] = useState("")

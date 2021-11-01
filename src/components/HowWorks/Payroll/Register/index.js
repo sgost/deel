@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import {
   RegisterSection,
   ImageConteiner,
@@ -7,11 +7,13 @@ import {
   Solution,
 } from "./styles.js"
 import BannerImage from "../../../../data/assets/1.jpeg"
-import logo from "../../../../data/assets/shopify.png"
-import { Form, Select } from "antd"
 
 const Register = () => {
-  const { Option } = Select
+  const [categorys, setCategorys] = useState("")
+  const [over, setOver] = useState("")
+  const toggleTab = index => {
+    setCategorys(index)
+  }
 
   return (
     <>
@@ -36,43 +38,61 @@ const Register = () => {
             <h1>Join the waitlist</h1>
             <div id="Register_form_real">
               <div id="input1">
-                <label id="label" htmlFor="title">Company name</label>
+                <label id="label" htmlFor="title">
+                  Company name
+                </label>
                 <input type="text" placeholder="Deel" />
               </div>
               <div id="input2">
                 <div id="input2_b1">
-                  <label id="label" htmlFor="title">Work Email Address</label>
+                  <label id="label" htmlFor="title">
+                    Work Email Address
+                  </label>
                   <input type="text" placeholder="John@letsDeel.com" />
                 </div>
                 <div id="input2_b1">
-                  <label id="label" htmlFor="title">Website URL</label>
+                  <label id="label" htmlFor="title">
+                    Website URL
+                  </label>
                   <input type="text" placeholder="www.letsdeel.com" />
                 </div>
               </div>
               <div id="input1">
-                <label id="label" htmlFor="title">Which countries would you like to run payroll in?</label>
+                <label id="label" htmlFor="title">
+                  Which countries would you like to run payroll in?
+                </label>
                 <input type="text" placeholder="UnitesStates Canada" />
               </div>
               <div id="input1">
-                <label id="label" htmlFor="title">What tool do you use now?</label>
+                <label id="label" htmlFor="title">
+                  What tool do you use now?
+                </label>
                 <input type="text" placeholder="ADP Rippling" />
               </div>
               <div id="input1">
-                <label id="label" htmlFor="title">How many employees do you want to pay?</label>
-                <Form.Item
-                  name="gender"
-                  rules={[{ required: true }]}
-                  id="input_select"
-                >
-                  <Select
-                    placeholder="Select a option and change input text above"
-                    allowClear
-                  >
-                    <Option value="male">1-50</Option>
-                    <Option value="female">51-200</Option>
-                    <Option value="other">200-250</Option>
-                  </Select>
-                </Form.Item>
+                <label id="label" htmlFor="title">
+                  How many employees do you want to pay?
+                </label>
+                <div id="select">
+                  {over ? (
+                    <div onClick={() => setOver(false)} role="presentation" id="input">
+                      {categorys ? categorys : "Category"}
+                    </div>
+                  ) : (
+                    <div onClick={() => setOver(true)} role="presentation" id="input">
+                      {categorys ? categorys : "Category"}
+                    </div>
+                  )}
+                  {over ? (
+                    <div id="option">
+                      <p onClick={() => toggleTab("1 - 10")} role="presentation">1 - 10</p>
+                      <p onClick={() => toggleTab("10 - 15")} role="presentation">10 - 15</p>
+                      <p onClick={() => toggleTab("15 - 20")} role="presentation">15 - 20</p>
+                    </div>
+                  ) : (
+                    ""
+                  )}
+                </div>
               </div>
               <div id="input">
                 <button>Join the wait list</button>
@@ -84,30 +104,61 @@ const Register = () => {
 
       <TrustSection>
         <div id="Trust_container">
-          <h1>
-            Join thousands of companies that trust Deel to compliantly hire
-            anywhere
-          </h1>
+          <h1>Dependable international payroll</h1>
           <h2>
-            Deel has everything you need to compliantly hire, pay and manage
-            contractors and employees in 150 countries. Think onboarding,
-            contracts, expense management, benefits, payroll and built-in
-            compliance for your international team.
+            We've processed payments and payroll for more than 3,500 businesses
+            (and counting).
           </h2>
         </div>
         <div id="Trust_container2">
-          <img src={logo} alt="img" />
-          <img src={logo} alt="img" />
-          <img src={logo} alt="img" />
-          <img src={logo} alt="img" />
-          <img src={logo} alt="img" />
-          <img src={logo} alt="img" />
-          <img src={logo} alt="img" />
-          <img src={logo} alt="img" />
-          <img src={logo} alt="img" />
-          <img src={logo} alt="img" />
-          <img src={logo} alt="img" />
-          <img src={logo} alt="img" />
+          <img
+            src="https://assets.website-files.com/601ac25738ddfb7beea0c682/611be0d8c0c26bfa1c8e028d_dropbox.svg"
+            alt="img"
+          />
+          <img
+            src="https://assets.website-files.com/601ac25738ddfb7beea0c682/611be0d9ddbd3511dda6cecf_shopify.svg"
+            alt="img"
+          />
+          <img
+            src="https://assets.website-files.com/601ac25738ddfb7beea0c682/611be0d8d3d7fc2b11270538_intercom.svg"
+            alt="img"
+          />
+          <img
+            src="https://assets.website-files.com/601ac25738ddfb7beea0c682/611be0d83041b24b6900aa05_dlocal.svg"
+            alt="img"
+          />
+          <img
+            src="https://assets.website-files.com/601ac25738ddfb7beea0c682/611be0d9d0dfca14db073bec_alan.svg"
+            alt="img"
+          />
+          <img
+            src="https://assets.website-files.com/601ac25738ddfb7beea0c682/611be0d9d0dfca2aa2073beb_notion.svg"
+            alt="img"
+          />
+          <img
+            src="https://assets.website-files.com/601ac25738ddfb7beea0c682/611be0da48c8da573d497d4c_airtable.svg"
+            alt="img"
+          />
+          <img
+            src="https://assets.website-files.com/601ac25738ddfb7beea0c682/611be0d885d314774752045b_mercury.svg"
+            alt="img"
+          />
+          <img
+            src="https://assets.website-files.com/601ac25738ddfb7beea0c682/611be0d805e28e1efd95c909_superhuman.svg"
+            alt="img"
+          />
+          <img
+            src="https://assets.website-files.com/601ac25738ddfb7beea0c682/611be0d822e3eb365adf65e0_voi.svg"
+            alt="img"
+          />
+          <img
+            src="https://assets.website-files.com/601ac25738ddfb7beea0c682/611be0d923d782a28fbebbb7_spendesk.svg"
+            alt="img"
+          />
+          <img
+            src="https://assets.website-files.com/601ac25738ddfb7beea0c682/611be0d801914fabdbb1ad02_andela.svg"
+            alt="img"
+          />
         </div>
       </TrustSection>
 
