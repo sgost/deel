@@ -59,6 +59,22 @@ export const PriceSection = styled.div`
     margin-top: 1.8vw;
     color: ${palette.PRIMARY_TXT_COLOR};
   }
+
+  @media (max-width:750px){
+    #Price_container{
+      padding:36vw 0 0 0;
+    }
+     #Price_container h1 {
+      font-size: 9vw;
+      line-height: 11vw;
+      width: 70vw;
+  }
+   #Price_container h2 {
+    font-size: 5vw;
+    width: 90vw;
+    margin-top: 3vw;
+}
+  }
 `
 export const PriceSectionCards = styled.div`
 padding:7vw 10vw 0vw 10vw;
@@ -155,10 +171,62 @@ margin: 0 1.07913669064748vw 0 0;
     font-weight: 700;
     margin:3vw auto auto auto;
 }
+
+@media (max-width:750px){
+  padding:17vw 5vw 5vw 5vw;
+#cards_container {
+display: grid;
+grid-template-columns: auto;
+gap: 5vw;
+}
+ #cards_container #cards {
+  padding: 5vw 2.87769784172662vw;
+  box-shadow: 0 0.287769784172662vw 0.575539568345324vw 0 rgb(0 0 0 / 12%);
+  border-radius: 6vw;
+  border: 1vw solid #e4f2f8;
+}
+ #cards_container #cards h1 {
+  margin-bottom: 5vw;
+  font-size: 7vw;
+}
+ #cards_container #cards p {
+  margin-bottom: 4vw;
+  font-size: 6vw;
+  width: 100%;
+}
+ #cards_container #cards #card_price p span {
+  font-size: 12vw;
+}
+ #cards_container #cards #card_price p {
+  font-size: 4vw;
+}
+ #cards_container #cards button {
+  height: 16vw;
+  width: 100%;
+  padding: 1.07913669064748vw 2.87769784172662vw;
+  border-radius: 8vw;
+  font-size: 6vw;
+  margin: 7.517986vw 0 6vw 0;
+}
+ #link {
+  font-size: 6vw;
+  margin: 14vw auto auto auto;
+}
+ #cards_container #cards h2 {
+  font-size: 3.7vw;
+  margin: 1.07913669064748vw auto 1.07913669064748vw 0;
+  text-align: left;
+}
+ #cards_container #cards h2 .icon {
+  width: 3.5vw;
+  height: 3vw;
+  margin: 2vw ​2vw auto 0;
+}
+}
   `
 
 export const PriceSolutionCards = styled.div`
-padding:7vw 10vw 0 10vw;
+padding:7vw 5vw 0 5vw;
 #solutionCards{
 border-top:0.2vw solid #e4f2f8;
 display:grid;
@@ -240,6 +308,58 @@ padding:5vw 0;
   line-height: 1.15107913669065vw;
   font-weight: 500;
   margin:2vw auto auto auto;
+}
+@media (max-width: 750px) {
+   #solutionCards {
+    border-top: 1vw solid #e4f2f8;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 5vw;
+    padding: 11vw 0 5vw 0;
+    width: 100%;
+}
+ #solutionCards #cards {
+  display: flex;
+  flex-direction: column;
+  padding:8vw 5vw;
+  border-radius:4vw;
+}
+ #solutionCards #cards:nth-child(1) {
+  border: 1.5vw solid #feca00;
+}
+ #solutionCards #cards:nth-child(2) {
+  border: 1.5vw solid #ffa9c6;
+}
+#solutionCards #cards #cards_matter{
+  text-align:center;
+}
+ #solutionCards #cards #cards_matter h1 {
+  font-size: 5vw;
+  margin-bottom: 2vw;
+}
+ #solutionCards #cards #cards_matter p {
+  font-size: 5vw;
+  width: 100%;
+  margin-bottom: 6vw;
+}
+ #solutionCards #cards button {
+  height: 11vw;
+  border-radius: 8vw;
+  font-size: 4vw;
+  width: 100%;
+}
+ #matter h1 {
+  font-size: 7vw;
+  width: 100%;
+  margin: 5vw auto 5vw auto;
+}
+ #matter button {
+  height: 10vw;
+  padding: 1.07913669064748vw 13vw;
+  border-radius: 8vw;
+  font-size: 3vw;
+  margin: auto;
+}
 }
 `
 

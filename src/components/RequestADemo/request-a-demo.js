@@ -1,11 +1,10 @@
-import React, { useRef } from "react"
+import React, { useRef, useState } from "react"
 import {
     RegisterSection,
     ImageConteiner,
     RegisterContainer,
     RegisterLogo,
 } from "./styles.js"
-import { Form, Select } from "antd"
 import { Link } from "gatsby"
 import Nav from "../Landing/Nav/index"
 import { Carousel } from "react-bootstrap"
@@ -13,8 +12,11 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import { LeftOutlined, RightOutlined, StarFilled } from '@ant-design/icons';
 
 const RegisterDemo = () => {
-
-    const { Option } = Select
+    const [categorys, setCategorys] = useState("")
+    const [over, setOver] = useState("")
+    const toggleTab = index => {
+        setCategorys(index)
+    }
 
     const slider = useRef(null)
 
@@ -95,20 +97,26 @@ const RegisterDemo = () => {
                             </div>
                             <div id="input1">
                                 <label id="label" htmlFor="title">How many people work at your company?</label>
-                                <Form.Item
-                                    name="Company"
-                                    rules={[{ required: true }]}
-                                    id="input_select"
-                                >
-                                    <Select
-                                        placeholder="Select..."
-                                        allowClear
-                                    >
-                                        <Option value="male">1-50</Option>
-                                        <Option value="female">51-200</Option>
-                                        <Option value="other">200-250</Option>
-                                    </Select>
-                                </Form.Item>
+                                <div id="select">
+                                    {over ? (
+                                        <div onClick={() => setOver(false)} role="presentation" id="input">
+                                            {categorys ? categorys : "Category"}
+                                        </div>
+                                    ) : (
+                                        <div onClick={() => setOver(true)} role="presentation" id="input">
+                                            {categorys ? categorys : "Category"}
+                                        </div>
+                                    )}
+                                    {over ? (
+                                        <div id="option">
+                                            <p onClick={() => toggleTab("1 - 10")} role="presentation">1 - 10</p>
+                                            <p onClick={() => toggleTab("10 - 15")} role="presentation">10 - 15</p>
+                                            <p onClick={() => toggleTab("15 - 20")} role="presentation">15 - 20</p>
+                                        </div>
+                                    ) : (
+                                        ""
+                                    )}
+                                </div>
                             </div>
                             <div id="input">
                                 <button>Book a demo</button>

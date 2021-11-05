@@ -43,6 +43,9 @@ const GlobalHiringGuide = () => {
       </TrustSection>
       <TrustSectionCards>
         <div id="cards_container">
+          
+          
+          
           <div id="cards_section">
             <div id="cards">
               <div id="cards_b1">
@@ -51,6 +54,8 @@ const GlobalHiringGuide = () => {
               </div>
               <div id="cards_b2"><p>Hire In <span>Canada</span></p></div>
             </div>
+            
+            
             <div id="cards_b1_hover">
               <div id="cards_b1_hover_matter">
                 <p>Hire In <span>Canada</span></p>
@@ -61,6 +66,9 @@ const GlobalHiringGuide = () => {
               </div>
             </div>
           </div>
+          
+          
+          
           <div id="cards_section">
             <div id="cards">
               <div id="cards_b1">
@@ -69,6 +77,8 @@ const GlobalHiringGuide = () => {
               </div>
               <div id="cards_b2"><p>Hire In <span>Canada</span></p></div>
             </div>
+            
+            
             <div id="cards_b1_hover">
               <div id="cards_b1_hover_matter">
                 <p>Hire In <span>Canada</span></p>
@@ -79,6 +89,9 @@ const GlobalHiringGuide = () => {
               </div>
             </div>
           </div>
+          
+          
+          
           <div id="cards_section">
             <div id="cards">
               <div id="cards_b1">
@@ -87,6 +100,8 @@ const GlobalHiringGuide = () => {
               </div>
               <div id="cards_b2"><p>Hire In <span>Canada</span></p></div>
             </div>
+            
+            
             <div id="cards_b1_hover">
               <div id="cards_b1_hover_matter">
                 <p>Hire In <span>Canada</span></p>
@@ -97,6 +112,9 @@ const GlobalHiringGuide = () => {
               </div>
             </div>
           </div>
+          
+          
+          
           <div id="cards_section">
             <div id="cards">
               <div id="cards_b1">
@@ -105,6 +123,8 @@ const GlobalHiringGuide = () => {
               </div>
               <div id="cards_b2"><p>Hire In <span>Canada</span></p></div>
             </div>
+            
+            
             <div id="cards_b1_hover">
               <div id="cards_b1_hover_matter">
                 <p>Hire In <span>Canada</span></p>
@@ -115,6 +135,9 @@ const GlobalHiringGuide = () => {
               </div>
             </div>
           </div>
+          
+          
+          
           <div id="cards_section">
             <div id="cards">
               <div id="cards_b1">
@@ -123,6 +146,8 @@ const GlobalHiringGuide = () => {
               </div>
               <div id="cards_b2"><p>Hire In <span>Canada</span></p></div>
             </div>
+            
+            
             <div id="cards_b1_hover">
               <div id="cards_b1_hover_matter">
                 <p>Hire In <span>Canada</span></p>
@@ -133,6 +158,9 @@ const GlobalHiringGuide = () => {
               </div>
             </div>
           </div>
+          
+          
+          
           <div id="cards_section">
             <div id="cards">
               <div id="cards_b1">
@@ -141,6 +169,8 @@ const GlobalHiringGuide = () => {
               </div>
               <div id="cards_b2"><p>Hire In <span>Canada</span></p></div>
             </div>
+            
+            
             <div id="cards_b1_hover">
               <div id="cards_b1_hover_matter">
                 <p>Hire In <span>Canada</span></p>

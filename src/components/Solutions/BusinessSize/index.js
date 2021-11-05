@@ -66,10 +66,10 @@ const BusinessSize = () => {
               with local laws, send it to sign, and they'll get onboarded almost
               instantly.
             </h2>
-            <div id="cardData_b_points"><CheckOutlined/><p>Got a new hire in Germany or maybe Brazil?</p></div>
-            <div id="cardData_b_points"><CheckOutlined/><p>Got a new hire in Germany or maybe Brazil?</p></div>
-            <div id="cardData_b_points"><CheckOutlined/><p>Got a new hire in Germany or maybe Brazil?</p></div>
-            <div id="cardData_b_points"><CheckOutlined/><p>Got a new hire in Germany or maybe Brazil?</p></div>
+            <div id="cardData_b_points"><CheckOutlined className="icon"/><p>Got a new hire in Germany or maybe Brazil?</p></div>
+            <div id="cardData_b_points"><CheckOutlined className="icon"/><p>Got a new hire in Germany or maybe Brazil?</p></div>
+            <div id="cardData_b_points"><CheckOutlined className="icon"/><p>Got a new hire in Germany or maybe Brazil?</p></div>
+            <div id="cardData_b_points"><CheckOutlined className="icon"/><p>Got a new hire in Germany or maybe Brazil?</p></div>
           </div>
           <div id="cardImage">
             <img src="https://assets.website-files.com/601ac25738ddfb7beea0c682/610c2ad32f8cd92aa5cf9103_make-team-p-800.jpeg" alt="img" />
@@ -84,10 +84,10 @@ const BusinessSize = () => {
               with local laws, send it to sign, and they'll get onboarded almost
               instantly.
             </h2>
-            <div id="cardData_b_points"><CheckOutlined/><p>Got a new hire in Germany or maybe Brazil?</p></div>
-            <div id="cardData_b_points"><CheckOutlined/><p>Got a new hire in Germany or maybe Brazil?</p></div>
-            <div id="cardData_b_points"><CheckOutlined/><p>Got a new hire in Germany or maybe Brazil?</p></div>
-            <div id="cardData_b_points"><CheckOutlined/><p>Got a new hire in Germany or maybe Brazil?</p></div>
+            <div id="cardData_b_points"><CheckOutlined className="icon"/><p>Got a new hire in Germany or maybe Brazil?</p></div>
+            <div id="cardData_b_points"><CheckOutlined className="icon"/><p>Got a new hire in Germany or maybe Brazil?</p></div>
+            <div id="cardData_b_points"><CheckOutlined className="icon"/><p>Got a new hire in Germany or maybe Brazil?</p></div>
+            <div id="cardData_b_points"><CheckOutlined className="icon"/><p>Got a new hire in Germany or maybe Brazil?</p></div>
           </div>
           <div id="cardImage">
             <img src="https://assets.website-files.com/601ac25738ddfb7beea0c682/610cab52cfbb69d0666699db_hire-globally-p-800.jpeg" alt="img" />
@@ -165,10 +165,10 @@ const BusinessSize = () => {
               with local laws, send it to sign, and they'll get onboarded almost
               instantly.
             </h2>
-            <div id="cardData_b_points"><CheckOutlined/><p>Got a new hire in Germany or maybe Brazil?</p></div>
-            <div id="cardData_b_points"><CheckOutlined/><p>Got a new hire in Germany or maybe Brazil?</p></div>
-            <div id="cardData_b_points"><CheckOutlined/><p>Got a new hire in Germany or maybe Brazil?</p></div>
-            <div id="cardData_b_points"><CheckOutlined/><p>Got a new hire in Germany or maybe Brazil?</p></div>
+            <div id="cardData_b_points"><CheckOutlined className="icon"/><p>Got a new hire in Germany or maybe Brazil?</p></div>
+            <div id="cardData_b_points"><CheckOutlined className="icon"/><p>Got a new hire in Germany or maybe Brazil?</p></div>
+            <div id="cardData_b_points"><CheckOutlined className="icon"/><p>Got a new hire in Germany or maybe Brazil?</p></div>
+            <div id="cardData_b_points"><CheckOutlined className="icon"/><p>Got a new hire in Germany or maybe Brazil?</p></div>
           </div>
           <div id="cardImage">
             <img src="https://assets.website-files.com/601ac25738ddfb7beea0c682/610cb553f92b92a373d0177c_boost-employer-p-800.jpeg" alt="img" />
@@ -183,10 +183,10 @@ const BusinessSize = () => {
               with local laws, send it to sign, and they'll get onboarded almost
               instantly.
             </h2>
-            <div id="cardData_b_points"><CheckOutlined/><p>Got a new hire in Germany or maybe Brazil?</p></div>
-            <div id="cardData_b_points"><CheckOutlined/><p>Got a new hire in Germany or maybe Brazil?</p></div>
-            <div id="cardData_b_points"><CheckOutlined/><p>Got a new hire in Germany or maybe Brazil?</p></div>
-            <div id="cardData_b_points"><CheckOutlined/><p>Got a new hire in Germany or maybe Brazil?</p></div>
+            <div id="cardData_b_points"><CheckOutlined className="icon"/><p>Got a new hire in Germany or maybe Brazil?</p></div>
+            <div id="cardData_b_points"><CheckOutlined className="icon"/><p>Got a new hire in Germany or maybe Brazil?</p></div>
+            <div id="cardData_b_points"><CheckOutlined className="icon"/><p>Got a new hire in Germany or maybe Brazil?</p></div>
+            <div id="cardData_b_points"><CheckOutlined className="icon"/><p>Got a new hire in Germany or maybe Brazil?</p></div>
           </div>
           <div id="cardImage">
             <img src="https://assets.website-files.com/601ac25738ddfb7beea0c682/610cb5534f41dc57e241be92_one-platform-p-800.jpeg" alt="img" />

@@ -48,6 +48,39 @@ export const BannerSection = styled.div`
     margin: 1.43884892086331vw 24.4604316546763vw 0 0;
     cursor: pointer;
   }
+  @media (max-width: 750px) {
+    height: 190vw;
+    #banner_container {
+      margin: auto;
+      text-align: center;
+    }
+    #banner_container h1 {
+      width: 100%;
+      font-weight: 300;
+      font-size: 7vw;
+      line-height: 1.3;
+      color: white;
+      text-align: center;
+      margin: auto;
+    }
+    #banner_container h2 {
+      color: white;
+      font-weight: 700;
+      font-size: 11.9vw;
+      margin: 2.15827338129496vw 0 7vw 0;
+      text-align: center;
+    }
+    #banner_container p {
+      font-weight: 500;
+      font-size: 4.5vw;
+      line-height: 1.6;
+      width: 85vw;
+      text-align: left;
+      color: white;
+      margin: 5vw auto 15vw auto;
+      text-align: center;
+    }
+  }
 `
 export const ImageConteiner = styled.div`
   position:absolute;
@@ -56,5 +89,10 @@ export const ImageConteiner = styled.div`
   height:100%;
   #img1{
       height:49vw;
+  }
+  @media (max-width: 750px) {
+    #img1 {
+      height: 190vw;
+    }
   }
 `
