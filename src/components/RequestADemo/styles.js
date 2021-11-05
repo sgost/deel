@@ -103,6 +103,7 @@ export const RegisterContainer = styled.div`
       box-shadow:0 0.287769784172662vw 0.575539568345324vw 0 rgba(19, 21, 51, 0.12)
       border-radius:0.719424460431655vw;
       transition:0.5s ease-in-out;
+      width:100%;
   }
   #Register_matter #Register_matter_carousal #Register_matter_carousal_section:hover{
       padding:2.58992805755396vw;
@@ -239,6 +240,171 @@ export const RegisterContainer = styled.div`
     outline: none;
     color: white;
   }
+  #Register_form_real #input1 #select {
+    height: 3.45323741007194vw;
+    border: 0.0719424460431655vw solid #cfd0d6;
+    border-radius: 0.143884892086331vw;
+    background-color: transparent;
+    width: 100%;
+    outline: none;
+    font-size: 1.1vw;
+    position: relative;
+    color: black;
+    cursor: pointer;
+  }
+  #Register_form_real #input1 #select #input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 1vw 1vw 1vw 1.2vw;
+  }
+  #Register_form_real #input1 #select #option {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    background: white;
+    z-index: 1;
+    left: 0;
+    border-bottom-right-radius: 1vw;
+    border-bottom-left-radius: 1vw;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  #Register_form_real #input1 #select #option p {
+    padding: 1vw 0.2vw 1vw 1.3vw;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+  }
+  #Register_form_real #input1 #select #option p:hover {
+    background-color: blue;
+    color: white;
+  }
+
+  @media (max-width:750px){
+    flex-direction:column-reverse;
+    #Register_matter {
+      text-align: left;
+      width: 100%;
+      margin: auto;
+      text-align: center;
+      padding:0 5vw;
+    }
+     #Register_matter h1 {
+      font-size: 8vw;
+      margin: 17vw 0 6vw 0;
+  }
+   #Register_matter p {
+    font-size: 4vw;
+    line-height: 1.72;
+    color: #15357a;
+    margin:0 0 10vw 0;
+}
+
+    #Register_form {
+      width: 90%;
+      border-radius: 3vw;
+      padding: 10vw 5vw;
+      margin: 36vw auto auto auto;
+    }
+    #Register_form_real {
+      width: 100%;
+      gap: 5vw;
+      margin-top: 7vw;
+    }
+    #Register_form #input2 {
+      display: grid;
+      grid-template-columns: auto;
+      gap: 5vw;
+    }
+    #Register_form h1 {
+      font-size: 7vw;
+      margin: 0;
+      text-align: center;
+    }
+    #Register_form_real input {
+      height: 12vw;
+      border-radius: 1vw;
+      padding: 1vw 1vw 1vw 3vw;
+      font-size: 4vw;
+    }
+    #Register_form_real label {
+      font-size: 3.9vw;
+    }
+    #Register_form_real #input1 #select {
+      height: 12vw;
+      border-radius: 1vw;
+    }
+    #Register_form_real #input1 #select #input {
+      padding: 0 0 0 3vw;
+      font-size: 4vw;
+      display: flex;
+      align-items: center;
+    }
+    #Register_form #input button {
+      height: 12vw;
+      border-radius: 8vw;
+      padding: 1vw 1vw 1vw 3vw;
+      font-size: 4vw;
+    }
+    #Register_form_real #input1 #select {
+      height: 12vw;
+      border-radius: 1vw;
+    }
+    #Register_form_real #input1 #select #input {
+      padding: 0 0 0 3vw;
+      font-size: 4vw;
+      display: flex;
+      align-items: center;
+    }
+    #Register_form #input button {
+      height: 12vw;
+      border-radius: 8vw;
+      padding: 1vw 1vw 1vw 3vw;
+      font-size: 4vw;
+    }
+    #Register_form_real #input1 #select #option p {
+      padding: 1vw 0.2vw 1vw 3.9vw;
+    }
+     #Register_matter #Register_matter_carousal {
+      margin: 0;
+      padding: 0;
+      box-shadow:0 4px 8px 0 rgb(19 21 51 / 12%);
+  }
+    #Register_matter #Register_matter_carousal #btn{
+      display:none;
+  }
+   #Register_matter #Register_matter_carousal #Register_matter_carousal_section {
+    width: 100%;
+    padding:8vw 5vw;
+}
+ #Register_matter #Register_matter_carousal #carousal_img {
+  flex-direction: column;
+}
+ #Register_matter #Register_matter_carousal #Register_matter_carousal_section p {
+  width: 100%;
+  margin: 4vw 0 0 0;
+  font-weight: 400;
+}
+#Register_matter #Register_matter_carousal #carousal_img #carousal_img_container .star{
+  width:8vw;
+  height:8vw;
+  margin-left:1vw;
+}
+ #Register_matter #Register_matter_carousal #carousal_img h2 {
+  font-size: 4vw;
+}
+ #Register_matter #Register_matter_carousal #Register_matter_carousal_section p:nth-child(4) {
+  margin: 4vw 0 0 0;
+  font-size: 5vw;
+}
+ #Register_matter #Register_matter_carousal_rating p {
+  width: 100%;
+  line-height: 1.72661870503597vw;
+  margin: 7vw 0 3vw 0;
+}
+  }
 `
 
 export const RegisterLogo = styled.div`
@@ -255,5 +421,17 @@ export const RegisterLogo = styled.div`
       width: 9.51079136690647vw;
       height: 2.31654676258993vw;
     }
+  }
+  @media (max-width: 750px){
+     #Trust_container2 {
+      grid-template-columns: auto auto;
+      gap: 15vw 10vw;
+      margin: 0 auto;
+      padding: 15vw 1vw 16vw 1vw;
+  }
+   #Trust_container2 img {
+    width: 35vw;
+    height: 7vw;
+}
   }
   `

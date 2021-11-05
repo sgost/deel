@@ -3,7 +3,7 @@ import { NavContainer3 } from "./styles.js"
 import { DownOutlined, UpOutlined } from "@ant-design/icons"
 import { Link } from "gatsby"
 
-const Mobile = ({ HowItWorks }) => {
+const Mobile = ({ HowItWorks, HowItWorksResources }) => {
   const [toggleState, setToggleState] = useState("")
 
   const toggleTab = index => {
@@ -30,7 +30,11 @@ const Mobile = ({ HowItWorks }) => {
               {toggleState &&
                 HowItWorks.map((HowItWorks, i) => (
                   <>
-                    <Link id="nav_lnks" to={HowItWorks.link} key={i}>
+                    <Link
+                      id="nav_lnks"
+                      to={HowItWorks.link}
+                      key={HowItWorks.title}
+                    >
                       <h1>{HowItWorks.title}</h1>
                       <p>{HowItWorks.description}</p>
                     </Link>
@@ -84,7 +88,7 @@ const Mobile = ({ HowItWorks }) => {
           )}
           {toggleState === 3 ? (
             <div id="mob_nav_Links">
-              <Link id="nav_lnks"  to="/finance-teams/">
+              <Link id="nav_lnks" to="/finance-teams/">
                 <h1>For Finance Teams</h1>
                 <p>Hire abord with our employee service</p>
               </Link>
@@ -101,6 +105,42 @@ const Mobile = ({ HowItWorks }) => {
             ""
           )}
         </div>
+
+        {HowItWorksResources.map(HowItWorksResourcess => (
+          <div id="mob_nav_container">
+            {toggleState === HowItWorksResourcess.id ? (
+              <h1
+                id="nav_title"
+                onClick={() => toggleTab(0)}
+                role="presentation"
+              >
+                {HowItWorksResourcess.title}
+                <UpOutlined className="icon" />
+              </h1>
+            ) : (
+              <h1
+                id="nav_title"
+                onClick={() => toggleTab(HowItWorksResourcess.id)}
+                role="presentation"
+              >
+                {HowItWorksResourcess.title}
+                <DownOutlined className="icon" />
+              </h1>
+            )}
+            {toggleState === HowItWorksResourcess.id ? (
+              <div id="mob_nav_Links">
+                {HowItWorksResourcess.subLinks.map(subLinks => (
+                  <Link id="nav_lnks" to={subLinks.link} key={subLinks.title}>
+                    <h1>{subLinks.title}</h1>
+                    <p>{subLinks.description}</p>
+                  </Link>
+                ))}
+              </div>
+            ) : (
+              ""
+            )}
+          </div>
+        ))}
       </div>
     </NavContainer3>
   )

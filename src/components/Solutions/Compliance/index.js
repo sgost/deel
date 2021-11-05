@@ -57,49 +57,19 @@ const Compliance = () => {
                 onboarded almost instantly.
               </h2>
               <div id="cardData_b_points">
-                <CheckOutlined />
+                <CheckOutlined className="icon"/>
                 <p>Got a new hire in Germany or maybe Brazil?</p>
               </div>
               <div id="cardData_b_points">
-                <CheckOutlined />
+                <CheckOutlined className="icon"/>
                 <p>Got a new hire in Germany or maybe Brazil?</p>
               </div>
               <div id="cardData_b_points">
-                <CheckOutlined />
+                <CheckOutlined className="icon"/>
                 <p>Got a new hire in Germany or maybe Brazil?</p>
               </div>
               <div id="cardData_b_points">
-                <CheckOutlined />
-                <p>Got a new hire in Germany or maybe Brazil?</p>
-              </div>
-            </div>
-            <div id="cardImage">
-              <img src="https://assets.website-files.com/601ac25738ddfb7beea0c682/610c2ad3ab443e088722e3e3_protect-business-p-800.jpeg" alt="img" />
-            </div>
-          </div>
-          <div id="Cards">
-            <div id="cardData">
-              <h1>Go from offer letter to onboarded ‍in minutes</h1>
-              <h2>
-                Got a new hire in Germany or maybe Brazil? Set them up to work
-                compliantly in minutes. Create a custom contract that’s
-                compliant with local laws, send it to sign, and they'll get
-                onboarded almost instantly.
-              </h2>
-              <div id="cardData_b_points">
-                <CheckOutlined />
-                <p>Got a new hire in Germany or maybe Brazil?</p>
-              </div>
-              <div id="cardData_b_points">
-                <CheckOutlined />
-                <p>Got a new hire in Germany or maybe Brazil?</p>
-              </div>
-              <div id="cardData_b_points">
-                <CheckOutlined />
-                <p>Got a new hire in Germany or maybe Brazil?</p>
-              </div>
-              <div id="cardData_b_points">
-                <CheckOutlined />
+                <CheckOutlined className="icon"/>
                 <p>Got a new hire in Germany or maybe Brazil?</p>
               </div>
             </div>
@@ -117,19 +87,49 @@ const Compliance = () => {
                 onboarded almost instantly.
               </h2>
               <div id="cardData_b_points">
-                <CheckOutlined />
+                <CheckOutlined className="icon"/>
                 <p>Got a new hire in Germany or maybe Brazil?</p>
               </div>
               <div id="cardData_b_points">
-                <CheckOutlined />
+                <CheckOutlined className="icon"/>
                 <p>Got a new hire in Germany or maybe Brazil?</p>
               </div>
               <div id="cardData_b_points">
-                <CheckOutlined />
+                <CheckOutlined className="icon"/>
                 <p>Got a new hire in Germany or maybe Brazil?</p>
               </div>
               <div id="cardData_b_points">
-                <CheckOutlined />
+                <CheckOutlined className="icon"/>
+                <p>Got a new hire in Germany or maybe Brazil?</p>
+              </div>
+            </div>
+            <div id="cardImage">
+              <img src="https://assets.website-files.com/601ac25738ddfb7beea0c682/610c2ad3ab443e088722e3e3_protect-business-p-800.jpeg" alt="img" />
+            </div>
+          </div>
+          <div id="Cards">
+            <div id="cardData">
+              <h1>Go from offer letter to onboarded ‍in minutes</h1>
+              <h2>
+                Got a new hire in Germany or maybe Brazil? Set them up to work
+                compliantly in minutes. Create a custom contract that’s
+                compliant with local laws, send it to sign, and they'll get
+                onboarded almost instantly.
+              </h2>
+              <div id="cardData_b_points">
+                <CheckOutlined className="icon"/>
+                <p>Got a new hire in Germany or maybe Brazil?</p>
+              </div>
+              <div id="cardData_b_points">
+                <CheckOutlined className="icon"/>
+                <p>Got a new hire in Germany or maybe Brazil?</p>
+              </div>
+              <div id="cardData_b_points">
+                <CheckOutlined className="icon"/>
+                <p>Got a new hire in Germany or maybe Brazil?</p>
+              </div>
+              <div id="cardData_b_points">
+                <CheckOutlined className="icon"/>
                 <p>Got a new hire in Germany or maybe Brazil?</p>
               </div>
             </div>
@@ -166,49 +166,19 @@ const Compliance = () => {
                 onboarded almost instantly.
               </h2>
               <div id="cardData_b_points">
-                <CheckOutlined />
+                <CheckOutlined className="icon"/>
                 <p>Got a new hire in Germany or maybe Brazil?</p>
               </div>
               <div id="cardData_b_points">
-                <CheckOutlined />
+                <CheckOutlined className="icon"/>
                 <p>Got a new hire in Germany or maybe Brazil?</p>
               </div>
               <div id="cardData_b_points">
-                <CheckOutlined />
+                <CheckOutlined className="icon"/>
                 <p>Got a new hire in Germany or maybe Brazil?</p>
               </div>
               <div id="cardData_b_points">
-                <CheckOutlined />
-                <p>Got a new hire in Germany or maybe Brazil?</p>
-              </div>
-            </div>
-            <div id="cardImage">
-              <img src="https://assets.website-files.com/601ac25738ddfb7beea0c682/610c2ad373cc5e935252f984_file-taxes-p-800.jpeg" alt="img" />
-            </div>
-          </div>
-          <div id="Cards">
-            <div id="cardData">
-              <h1>Go from offer letter to onboarded ‍in minutes</h1>
-              <h2>
-                Got a new hire in Germany or maybe Brazil? Set them up to work
-                compliantly in minutes. Create a custom contract that’s
-                compliant with local laws, send it to sign, and they'll get
-                onboarded almost instantly.
-              </h2>
-              <div id="cardData_b_points">
-                <CheckOutlined />
-                <p>Got a new hire in Germany or maybe Brazil?</p>
-              </div>
-              <div id="cardData_b_points">
-                <CheckOutlined />
-                <p>Got a new hire in Germany or maybe Brazil?</p>
-              </div>
-              <div id="cardData_b_points">
-                <CheckOutlined />
-                <p>Got a new hire in Germany or maybe Brazil?</p>
-              </div>
-              <div id="cardData_b_points">
-                <CheckOutlined />
+                <CheckOutlined className="icon"/>
                 <p>Got a new hire in Germany or maybe Brazil?</p>
               </div>
             </div>
@@ -226,19 +196,49 @@ const Compliance = () => {
                 onboarded almost instantly.
               </h2>
               <div id="cardData_b_points">
-                <CheckOutlined />
+                <CheckOutlined className="icon"/>
                 <p>Got a new hire in Germany or maybe Brazil?</p>
               </div>
               <div id="cardData_b_points">
-                <CheckOutlined />
+                <CheckOutlined className="icon"/>
                 <p>Got a new hire in Germany or maybe Brazil?</p>
               </div>
               <div id="cardData_b_points">
-                <CheckOutlined />
+                <CheckOutlined className="icon"/>
                 <p>Got a new hire in Germany or maybe Brazil?</p>
               </div>
               <div id="cardData_b_points">
-                <CheckOutlined />
+                <CheckOutlined className="icon"/>
+                <p>Got a new hire in Germany or maybe Brazil?</p>
+              </div>
+            </div>
+            <div id="cardImage">
+              <img src="https://assets.website-files.com/601ac25738ddfb7beea0c682/610c2ad373cc5e935252f984_file-taxes-p-800.jpeg" alt="img" />
+            </div>
+          </div>
+          <div id="Cards">
+            <div id="cardData">
+              <h1>Go from offer letter to onboarded ‍in minutes</h1>
+              <h2>
+                Got a new hire in Germany or maybe Brazil? Set them up to work
+                compliantly in minutes. Create a custom contract that’s
+                compliant with local laws, send it to sign, and they'll get
+                onboarded almost instantly.
+              </h2>
+              <div id="cardData_b_points">
+                <CheckOutlined className="icon"/>
+                <p>Got a new hire in Germany or maybe Brazil?</p>
+              </div>
+              <div id="cardData_b_points">
+                <CheckOutlined className="icon"/>
+                <p>Got a new hire in Germany or maybe Brazil?</p>
+              </div>
+              <div id="cardData_b_points">
+                <CheckOutlined className="icon"/>
+                <p>Got a new hire in Germany or maybe Brazil?</p>
+              </div>
+              <div id="cardData_b_points">
+                <CheckOutlined className="icon"/>
                 <p>Got a new hire in Germany or maybe Brazil?</p>
               </div>
             </div>

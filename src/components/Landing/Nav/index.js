@@ -77,23 +77,63 @@ const Nav = () => {
       description: "Hire Employees abord with our employee service",
     },
   ]
-  // const HowItWorksResources = [
-  //   {
-  //     "title": "About",
-  //     "link": "/about/",
-  //     "description": "Learn more about our company and team",
-  //   },
-  //   {
-  //     "title": "Blog",
-  //     "link": "/blog/",
-  //     "description": "Official Blog Deel",
-  //   },
-  //   {
-  //     "title": "Run Global Payroll",
-  //     "link": "/payroll/",
-  //     "description": "Hire Employees abord with our employee service",
-  //   },
-  // ]
+  const HowItWorksResources = [
+    {
+      id: 4,
+      title: "Use Cases",
+      subLinks: [
+        {
+          title: "Compilance",
+          description: "Hire Employees abord with our employee service",
+          link: "/Compliance/",
+        },
+        {
+          title: "Payments",
+          description: "Hire Employees abord with our employee service",
+          link: "/Payments/",
+        },
+      ],
+    },
+    {
+      id: 5,
+      title: "Roles",
+      subLinks: [
+        {
+          title: "For Finance Teams",
+          description: "Hire Employees abord with our employee service",
+          link: "/finance-teams/",
+        },
+        {
+          title: "For Legal Teams",
+          description: "Hire Employees abord with our employee service",
+          link: "/Legal-teams/",
+        },
+        {
+          title: "For Hiring Managers",
+          description: "Hire Employees abord with our employee service",
+          link: "/Hiring-Managers/",
+        },
+      ],
+    },
+    {
+      id: 6,
+      title: "Business Size",
+      subLinks: [
+        {
+          title: "Startup",
+          description: "Hire Employees abord with our employee service",
+          link: "/StartUp/",
+        },
+        {
+          title: "Enterprise",
+          description: "Hire Employees abord with our employee service",
+          link: "/Enterprise/",
+        },
+      ],
+    },
+  ]
+
+  console.log(HowItWorksResources)
 
   const [footerPop, setFooterPop] = useState(false)
 
@@ -130,7 +170,7 @@ const Nav = () => {
               </Popover>
             </div>
             <div id="navTitle">
-              <Popover placement="bottomLeft" content={PopOver2}>
+              <Popover placement="bottomLeft" content={<PopOver2 HowItWorksResources={HowItWorksResources}/>}>
                 <h1 id="nav_link">
                   Solutions<div id="span"></div>
                 </h1>
@@ -177,15 +217,17 @@ const Nav = () => {
           okButtonProps={{ style: { display: "none" } }}
           cancelButtonProps={{ style: { display: "none" } }}
           onCancel={handelCancel}
-          bodyStyle={{ backgroundColor: `white`, height: `100%` }}
-          style={{ backgroundColor: `white`, height: `100%` }}
+          bodyStyle={{ backgroundColor: `#F5FBFF`, height: `100%`, padding: `0`, boxShadow: `none` }}
+          style={{ backgroundColor: `#F5FBFF`, height: `100%`, padding: `0`, }}
           maskStyle={{
-            backgroundColor: `white`,
-            height: `fit-content`,
+            backgroundColor: `#F5FBFF`,
+            height: `100%`,
             padding: `0`,
           }}
         >
-          <Mobile HowItWorks={HowItWorks}/>
+              <div id="navcont">
+          <Mobile HowItWorks={HowItWorks} HowItWorksResources={HowItWorksResources}/>
+          </div>
         </Modal>
 
         <div

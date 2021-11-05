@@ -49,6 +49,50 @@ export const BannerSection = styled.div`
     background-color: rgba(255, 255, 255, 0.3);
     cursor: pointer;
   }
+  @media (max-width: 750px) {
+    height: 190vw;
+    #banner_container {
+      margin: 30vw auto auto auto;
+      text-align: center;
+    }
+    #banner_container h1 {
+      width: 100%;
+      font-weight: 300;
+      font-size: 7vw;
+      line-height: 1.3;
+      color: white;
+      text-align: center;
+      margin: auto;
+    }
+    #banner_container h2 {
+      color: white;
+      font-weight: 700;
+      font-size: 11.9vw;
+      margin: 2.15827338129496vw 0 7vw 0;
+      text-align: center;
+    }
+    #banner_container p {
+      font-weight: 500;
+      font-size: 4.5vw;
+      line-height: 1.6;
+      width: 85vw;
+      text-align: left;
+      color: white;
+      margin: 5vw auto 15vw auto;
+      text-align: center;
+    }
+    #banner_container button {
+      background: transparent;
+      border: 0.5vw solid white;
+      outline: none;
+      color: #fff;
+      width: 53vw;
+      height: 16vw;
+      font-size: 4.2vw;
+      border-radius: 8vw;
+      margin: 2vw auto auto auto;
+    }
+  }
 `
 export const ImageConteiner = styled.div`
   position: absolute;
@@ -57,6 +101,11 @@ export const ImageConteiner = styled.div`
   height: 100%;
   #img1 {
     height: 49vw;
+  }
+  @media (max-width: 750px) {
+    #img1 {
+      height: 190vw;
+    }
   }
 `
 export const TrustSection = styled.div`
@@ -123,6 +172,61 @@ export const TrustSection = styled.div`
   }
   #CardsContainer #Cards:nth-child(even) #cardImage {
     margin: 0 auto 0 0;
+  }
+  @media (max-width: 750px) {
+    padding: 20vw 5vw;
+    #Trust_container h1 {
+      font-size: 9vw;
+      width: 100%;
+    }
+    #Trust_container h2 {
+      font-size: 5vw;
+      width: 100%;
+      margin-top: 4vw;
+    }
+    #CardsContainer #Cards {
+      display: flex;
+      padding-top: 22.791367vw;
+      flex-direction: column;
+    }
+    #CardsContainer #Cards #cardImage {
+      height: fit-content;
+      width: 100%;
+      height: 70vw;
+      margin: 16vw 0 0 0;
+      position: relative;
+    }
+    #CardsContainer #Cards #cardImage img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+    #CardsContainer #Cards #cardData {
+      width: 100%;
+      height: fit-content;
+      margin: 0;
+      text-align: center;
+    }
+    #CardsContainer #Cards #cardData h1 {
+      font-size: 8.453237vw;
+      width: 100%;
+    }
+    #CardsContainer #Cards #cardData h2 {
+      font-size: 4.151079vw;
+      margin: 6vw 0 0 0;
+    }
+    #CardsContainer #Cards #cardData #cardData_b_points .icon {
+      font-size: 4vw;
+    }
+    #CardsContainer #Cards #cardData #cardData_b_points p {
+      margin-left: 4.2vw;
+    }
+    #CardsContainer #Cards:nth-child(even) {
+      flex-direction: column;
+    }
+    #CardsContainer #Cards:nth-child(even) #cardImage {
+      margin: 11vw 0 0 0;
+    }
   }
 `
 
@@ -231,6 +335,74 @@ export const PeopleSection = styled.div`
       color: ${palette.PRIMARY_TXT_COLOR};
     }
   }
+  @media (max-width: 750px) {
+    #PeopleContent {
+      flex-direction: column;
+      height: 172vw;
+    }
+    #PeopleContent #image_container {
+      width: 100%;
+      height: 68vw;
+      border-radius: 5.2vw;
+      overflow: hidden;
+      position: relative;
+    }
+    #PeopleContent #image_container img {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+    }
+    #PeopleContent2 {
+      width: 100%;
+      height: fit-content;
+      top: 52%;
+      left: 1%;
+      padding: 2vw 2vw 2vw 3vw;
+      border-radius: 1.2vw;
+    }
+    #PeopleContent2 p {
+      font-weight: 600;
+      font-size: 9.3vw;
+      line-height: 11vw;
+      color: #15357a;
+      margin: 5vw 0 7vw 0;
+    }
+    #PeopleContent2 img {
+      width: 30vw;
+    }
+    #PeopleContent2 #link {
+      color: #2c71f0;
+      font-size: 5.510791vw;
+      font-weight: 400;
+      line-height: 1.72;
+      align-items: center;
+      .icon {
+        margin: 0 0 0 15px;
+      }
+    }
+    #PeopleContent2 #link:hover {
+      color: #2c71f0;
+      font-size: 5.510791vw;
+      font-weight: 400;
+      line-height: 1.72;
+      align-items: center;
+      .icon {
+        margin: 0 0 0 30px;
+      }
+    }
+    #PeopleContent #image_matter h1 {
+      font-size: 4.8vw;
+      width: 100%;
+    }
+    #btn {
+      top: 95%;
+      width: 100%;
+      right: 0;
+      span:nth-child(2) {
+        margin: 0 0 0 auto;
+      }
+    }
+  }
 `
 
 export const EmployeesDeel = styled.div`
@@ -253,12 +425,13 @@ export const EmployeesDeel = styled.div`
   #Matters_mini_conteiner2 {
     display: flex;
     flex-direction: column;
-    padding:2vw;
-    border-radius:1.2vw;
-    box-shadow:0 1.00719424460432vw 0.863309352517986vw 0 rgb(0 0 0 / 15%);
-    transition:0.5s ease-in-out;
-    cursor:pointer;
-    transform:translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    padding: 2vw;
+    border-radius: 1.2vw;
+    box-shadow: 0 1.00719424460432vw 0.863309352517986vw 0 rgb(0 0 0 / 15%);
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+      rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
     img {
       width: 8.63309352517986vw;
       height: 8.63309352517986vw;
@@ -289,15 +462,15 @@ export const EmployeesDeel = styled.div`
       }
     }
   }
-  #Matters_mini_conteiner2:hover{
-    background-color:${palette.SECONDARY_TXT_COLOR};
-    width:19vw;
-    transition:0.5s ease-in-out;
-    p{
-      color:white;
+  #Matters_mini_conteiner2:hover {
+    background-color: ${palette.SECONDARY_TXT_COLOR};
+    width: 19vw;
+    transition: 0.5s ease-in-out;
+    p {
+      color: white;
     }
-    #link{
-      color:white;
+    #link {
+      color: white;
     }
   }
 `

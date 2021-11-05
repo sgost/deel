@@ -219,6 +219,10 @@ export const NavMatter2 = styled.div`
 export const NavContainer2 = styled.div`
   z-index: 1;
   display: none;
+  .ant-modal-footer{
+    padding:0;
+    display:none;
+  }
   @media (max-width: 750px) {
     display: flex;
   }
@@ -317,6 +321,8 @@ export const NavContainer2 = styled.div`
     transform: rotate(-45deg);
     margin: 0.359712230215827vw 0 0 0.719424460431655vw;
   }
+  @media (max-width: 750px) {
+  }
 `
 
 export const NavContainer3 = styled.div`
@@ -325,7 +331,6 @@ export const NavContainer3 = styled.div`
     height: 100%;
     background: white;
     padding: 40px 30px;
-    position: fixed;
     z-index: 2;
   }
   #mob_nav #mob_nav_container {

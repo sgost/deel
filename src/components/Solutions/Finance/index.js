@@ -170,6 +170,7 @@ const Roles = () => {
                 fontWeight: `bold`,
                 marginLeft: `50px`,
               }}
+              className="right"
             />
           </span>
         </div>
